@@ -1,0 +1,26 @@
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 40px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    padding: 8px 4px;
+    color: black;
+    @extend %montserrat-500;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: $accent;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

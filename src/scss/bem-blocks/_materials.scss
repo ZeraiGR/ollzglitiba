@@ -1,0 +1,75 @@
+.materials__promo {
+    margin-bottom: 32px;
+    padding: 32px 40px;
+    display: flex;
+    align-items: center;
+    background-color: #f6f7f7;
+    border-radius: 16px;
+}
+
+.materials__content {
+    margin-right: 70px;
+}
+
+.materials__label {
+    margin-bottom: 4px;
+    display: block;
+    @extend %montserrat-500;
+    color: black;
+    font-size: 12px;
+}
+
+.materials__name {
+    margin-bottom: 16px;
+    display: block;
+    @extend %montserrat-600;
+    color: $accent;
+    white-space: nowrap;
+}
+
+.materials__promo-link {
+    padding: 5px 16px;
+}
+
+.materials__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.materials__item {
+    max-width: 240px;
+    width: 100%;
+}
+
+.materials__link {
+    padding: 26px 24px;
+
+    display: block;
+    color: white;
+    border-radius: 16px;
+    &--schools {
+        background-color: $accent;
+    }
+    &--news {
+        background-color: #9fd356;
+    }
+}
+
+.materials__link-name,
+.materials__link-descr {
+    display: block;
+}
+
+.materials__link-name {
+    margin-bottom: 4px;
+}
+
+.materials__link-descr {
+    font-size: 12px;
+}
+
+.--svg__arrow-right {
+    background-repeat: no-repeat;
+    background-position: calc(100% - 32px) center;
+}

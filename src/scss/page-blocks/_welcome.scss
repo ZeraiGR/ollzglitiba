@@ -1,0 +1,36 @@
+.welcome {
+    padding: 70px 0 90px;
+}
+
+.welcome__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome__content {
+    max-width: 512px;
+}
+
+.welcome__subject {
+    margin-bottom: 24px;
+    display: block;
+}
+
+.welcome__title {
+    margin-bottom: 40px;
+    max-width: 400px;
+    @extend %montserrat-700;
+    color: black;
+    font-size: 56px;
+    line-height: 1.2;
+}
+
+.welcome__descr {
+    margin-bottom: 80px;
+    max-width: 370px;
+    font-size: 14px;
+}
+
+.welcome__steps {
+    display: flex;
+}

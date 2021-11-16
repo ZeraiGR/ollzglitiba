@@ -1,0 +1,50 @@
+.steps {
+}
+
+.steps__list {
+    padding: 40px 0;
+}
+
+.steps__item {
+    margin-bottom: 114px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps__item:last-child {
+    margin-bottom: 0;
+}
+
+.steps__num {
+    @extend %montserrat-700;
+    font-size: 72px;
+    color: #a6ca59;
+}
+
+.steps__name {
+    margin-bottom: 15px;
+    @extend %montserrat-600;
+    color: $accent;
+    font-size: 22px;
+}
+
+.steps__descr {
+    text-align: center;
+}
+
+.steps__images {
+    padding: 40px;
+    border: 1px solid rgba(54, 97, 246, 0.2);
+    border-radius: 40px;
+}
+
+.steps__image-item {
+    display: block;
+    margin-bottom: 40px;
+    max-width: 417px;
+}
+
+.steps__image-item:last-child {
+    margin-bottom: 0;
+}
