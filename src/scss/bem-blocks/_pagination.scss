@@ -1,0 +1,40 @@
+.pagination__list {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination__list li {
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    @extend %montserrat-500;
+}
+
+.pagination__list li:last-child {
+    margin-right: 0;
+}
+
+.pagination__dots {
+    position: relative;
+    margin: 0 17px !important;
+    &::before,
+    &::after {
+        position: absolute;
+        height: 16px;
+        width: 1px;
+        background-color: #cccccc;
+        content: '';
+    }
+
+    &::before {
+        left: -9px;
+    }
+
+    &::after {
+        right: -9px;
+    }
+}

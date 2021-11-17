@@ -22,7 +22,7 @@
 				href="css/libs.min.css">
 	<link rel="stylesheet"
 				href="css/style.min.css">
-	<title>o!zglitiba</title>
+	<title>o!zglitiba main</title>
 </head>
 
 
@@ -49,7 +49,7 @@
 				</ul>
 
 				<form class="language header__language" action="#">
-					<select class="language__select" name="language" id="language">
+					<select class="select" name="language" id="language">
 						<option value="en">en</option>
 						<option value="fr">fr</option>
 					</select>
@@ -170,17 +170,57 @@
 					</li>
 				</ul>
 
-				<ul class="steps__images">
-					<li class="steps__image-item">
-						<img class="steps__image" src="img/step-1.Jpg" alt="step 1 images">
+				<ul class="steps__guides">
+					<li class="steps__guide">
+						<div class="search">
+							<div class="search__top">
+								<span class="search__query">
+									Grammar text, video conference
+								</span>
+								<span class="search__btn button">Search</span>
+							</div>
+
+							<ul class="search__results">
+								<li class="search__result">
+									<p class="search__text">
+										Plugins For <span>video conference</span>
+									</p>
+									<img class="search__img" src="img/mind-icon.png" alt="instrument-icon">
+								</li>
+
+								<li class="search__result">
+									<p class="search__text">
+										Be correct with <span>grammarly</span> plugin
+									</p>
+									<img class="search__img" src="img/grammarly-icon.png" alt="instrument-icon">
+								</li>
+
+								<li class="search__result">
+									<p class="search__text">
+										Mentimeter
+									</p>
+									<img class="search__img" src="img/mentimeter-icon.png" alt="instrument-icon">
+								</li>
+							</ul>
+						</div>
 					</li>
 
-					<li class="steps__image-item">
-						<img class="steps__image" src="img/step-2.Jpg" alt="step 2 images">
+					<li class="steps__guide">
+						<div class="demo-instruments">
+							<img class="demo-instruments__img" src="img/step-instruments.png" alt="instruments">
+						</div>
 					</li>
 
-					<li class="steps__image-item">
-						<img class="steps__image" src="img/step-3.Jpg" alt="step 3 images">
+					<li class="steps__guide">
+						<div class="demonstration">
+							<div class="demonstration__example">
+								<span>Lets</span> start with Olizglitiba
+								<div class="demonstration__tooltip">
+									<span class="demonstration__comment">add an apostrophe</span>
+									<span class="demonstration__correct">Let’s</span>
+								</div>
+							</div>
+						</div>
 					</li>
 
 				</ul>
@@ -196,143 +236,370 @@
 
 			<h2 class="categories__title title">Categories</h2>
 
-			<ul class="categories__list">
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Power Point
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Science
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Anti adds
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Bookmarks
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Chatting
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Excel
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Chemistry
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Tools
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Physics
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Physics
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Google docs
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Video conference
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Fonts
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Reading
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Photoshop
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Grammar text
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Github
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Chemistry
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Presentation
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						VPN
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						Photos
-					</a>
-				</li>
-				<li class="categories__item">
-					<a class="categories__link" href="#">
-						IT
-					</a>
-				</li>
-			</ul>
+			<div class="categories__content">
+				<ul class="categories__list">
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Power Point
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Science
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Anti adds
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Bookmarks
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Chatting
+						</a>
+					</li>
+				</ul>
+
+				<ul class="categories__list">
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Excel
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Chemistry
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Tools
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Physics
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Physics
+						</a>
+					</li>
+				</ul>
+
+				<ul class="categories__list">
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Google docs
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Video conference
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Fonts
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Reading
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Photoshop
+						</a>
+					</li>
+				</ul>
+
+				<ul class="categories__list">
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Grammar text
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Github
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Chemistry
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Presentation
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							VPN
+						</a>
+					</li>
+				</ul>
+
+				<ul class="categories__list">
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							Photos
+						</a>
+					</li>
+					<li class="categories__item">
+						<a class="categories__link" href="#">
+							IT
+						</a>
+					</li>
+				</ul>
+			</div>
+
 
 		</div>
 	</div>
 </section>
 		<section class="instruments">
 	<div class="container">
+		<div class="instruments__inner">
 
-		<h2 class="instruments__title title">Instruments</h2>
+			<h2 class="instruments__title title">Instruments</h2>
 
-		<ul class="instruments__list">
-			<li class="instrument">
+			<ul class="instruments__list">
+				<li class="instrument">
+	<a class="instrument__open popup-link" href="#instrument-1"></a>
 	<img class="instrument__img" src="img/instrument-1.png" alt="instrument">
-</li><li class="instrument">
-	<img class="instrument__img" src="img/instrument-2.png" alt="instrument">
-</li><li class="instrument">
-	<img class="instrument__img" src="img/instrument-3.png" alt="instrument">
-</li><li class="instrument">
-	<img class="instrument__img" src="img/instrument-4.png" alt="instrument">
-</li><li class="instrument">
-	<img class="instrument__img" src="img/instrument-5.png" alt="instrument">
-</li><li class="instrument">
-	<img class="instrument__img" src="img/instrument-6.png" alt="instrument">
-</li>
-		</ul>
+	<div id="instrument-1" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
 
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-1.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="#">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><li class="instrument">
+	<a class="instrument__open popup-link" href="#instrument-2"></a>
+	<img class="instrument__img" src="img/instrument-2.png" alt="instrument">
+	<div id="instrument-2" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-2.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="#">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><li class="instrument">
+	<a class="instrument__open popup-link" href="#instrument-3"></a>
+	<img class="instrument__img" src="img/instrument-3.png" alt="instrument">
+	<div id="instrument-3" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-3.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="#">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><li class="instrument">
+	<a class="instrument__open popup-link" href="#instrument-4"></a>
+	<img class="instrument__img" src="img/instrument-4.png" alt="instrument">
+	<div id="instrument-4" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-4.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="#">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><li class="instrument">
+	<a class="instrument__open popup-link" href="#instrument-5"></a>
+	<img class="instrument__img" src="img/instrument-5.png" alt="instrument">
+	<div id="instrument-5" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-5.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="#">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><li class="instrument">
+	<a class="instrument__open popup-link" href="#instrument-6"></a>
+	<img class="instrument__img" src="img/instrument-6.png" alt="instrument">
+	<div id="instrument-6" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-6.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="#">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+			</ul>
+
+		</div>
 	</div>
 </section>
 	</main>
@@ -356,7 +623,7 @@
 				© oizglitiba 2021
 			</span>
 
-			<div class="footer__label">
+			<div class="footer__label --svg__brand-icon">
 				Izstrādāts
 			</div>
 

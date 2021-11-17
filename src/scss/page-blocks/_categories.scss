@@ -2,6 +2,40 @@
 }
 
 .categories__inner {
-    padding-top: 90px;
+    padding: 90px 0 80px;
     border-top: 1px solid #cccccc;
+}
+
+.categories__content {
+    display: flex;
+}
+
+.categories__list {
+    margin-right: 32px;
+    max-width: 240px;
+    width: 100%;
+}
+
+.categories__list:last-child {
+    margin-right: 0;
+}
+
+.categories__item {
+    margin-bottom: 16px;
+}
+
+.categories__item:last-child {
+    margin-bottom: 0;
+}
+
+.categories__link {
+    color: $accent;
+    transition: color 0.3s ease, text-decoration-color 0.3s ease;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+
+.categories__link:hover {
+    color: $accent-hover;
+    text-decoration-color: $accent-hover;
 }

@@ -1,0 +1,25 @@
+.sidebar {
+    margin-right: 32px;
+    max-width: 240px;
+    width: 100%;
+}
+
+.sidebar__title {
+    margin-bottom: 24px;
+    @extend %montserrat-600;
+}
+
+.sidebar-single__show {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    @extend %montserrat-500;
+    cursor: pointer;
+}
+
+.sidebar-single__list {
+    display: none;
+    &.show {
+        display: block;
+    }
+}

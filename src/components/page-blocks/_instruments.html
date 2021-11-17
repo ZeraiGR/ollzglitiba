@@ -1,18 +1,20 @@
 <section class="instruments">
 	<div class="container">
+		<div class="instruments__inner">
 
-		<h2 class="instruments__title title">Instruments</h2>
+			<h2 class="instruments__title title">Instruments</h2>
 
-		<ul class="instruments__list">
-			@@loop('../bem-blocks/_instrument.html', [
-			{"instrumentImg": "img/instrument-1.png" },
-			{"instrumentImg": "img/instrument-2.png"},
-			{"instrumentImg": "img/instrument-3.png"},
-			{"instrumentImg": "img/instrument-4.png"},
-			{"instrumentImg": "img/instrument-5.png"},
-			{"instrumentImg": "img/instrument-6.png"}
-			])
-		</ul>
+			<ul class="instruments__list">
+				@@loop('../bem-blocks/_instrument.html', [
+				{"instrumentImg": "img/instrument-1.png", "instrumentNum": "1" },
+				{"instrumentImg": "img/instrument-2.png", "instrumentNum": "2" },
+				{"instrumentImg": "img/instrument-3.png", "instrumentNum": "3" },
+				{"instrumentImg": "img/instrument-4.png", "instrumentNum": "4" },
+				{"instrumentImg": "img/instrument-5.png", "instrumentNum": "5" },
+				{"instrumentImg": "img/instrument-6.png", "instrumentNum": "6" }
+				])
+			</ul>
 
+		</div>
 	</div>
 </section>

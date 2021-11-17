@@ -48,11 +48,20 @@
     display: block;
     color: white;
     border-radius: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
     &--schools {
         background-color: $accent;
+        &:hover {
+            background-color: #1d768a;
+            box-shadow: 0px 3px 28px rgba(0, 0, 0, 0.06);
+        }
     }
     &--news {
         background-color: #9fd356;
+        &:hover {
+            background-color: #769b42;
+            box-shadow: 0px 3px 28px rgba(0, 0, 0, 0.06);
+        }
     }
 }
 

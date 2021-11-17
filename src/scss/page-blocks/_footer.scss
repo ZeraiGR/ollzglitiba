@@ -1,0 +1,22 @@
+.footer {
+    background: rgba(246, 247, 247, 0.5);
+}
+
+.footer__nav {
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__label {
+    padding-right: 96px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__label.--svg__brand-icon {
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 34px;
+}

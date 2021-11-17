@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="o!zglitiba project">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>o!zglitiba catalog</title>
+</head>
+
+
+<body>
+	<header class="header">
+	<div class="container">
+		<div class="header__nav">
+			<a class="logo" href="#">
+				<img src="img/logo.svg" alt="logo">
+			</a>
+
+			<div class="header__top">
+
+				<ul class="menu header__menu">
+					<li class="menu__item">
+						<a href="#">Meklēt rīku</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Lasīj jaunumus</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Skatīt goda dēlis</a>
+					</li>
+				</ul>
+
+				<form class="language header__language" action="#">
+					<select class="select" name="language" id="language">
+						<option value="en">en</option>
+						<option value="fr">fr</option>
+					</select>
+				</form>
+
+				<div class="account">
+					<!-- <div class="register">
+						<a class="register__link button" href="#">
+							Create account
+						</a>
+					</div> -->
+
+					<div class="login">
+						<a class="login__link button" href="#">
+							Login
+						</a>
+					</div>
+
+					<!-- <div class="authorized">
+						<a class="authorized__favourite" href="#">
+							Favourites
+						</a>
+						<div class="authorized__account">
+							<button class="authorized__portrain" id="portrainBtn">
+								R
+							</button>
+
+							<div class="authorized__info">
+
+								<div class="authorized__content">
+									<span class="authorized__portrain">
+										R
+									</span>
+									<span class="authorized__name">
+										Johnatan Williams
+									</span>
+								</div>
+
+								<a class="authorized__signout" href="#">
+									Sign out
+								</a>
+
+							</div>
+						</div>
+					</div> -->
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</header>
+	<main class="main">
+		<section class="catalog">
+	<div class="container">
+		<div class="catalog__inner">
+			<h1 class="catalog__title">Instruments</h1>
+
+			<div class="catalog__top">
+				<form class="catalog__search" action="#">
+					<label class="catalog__search-block">
+						<input class="catalog__search-enter" type="search" placeholder="Search">
+
+						<button class="catalog__search-btn button" type="button">
+							Search
+						</button>
+					</label>
+
+					<div class="catalog__search-category">
+						<span class="catalog__search-category">Where to search:</span>
+
+						<ul class="catalog__search-list">
+							<li class="catalog__search-item">
+								<label class="catalog__search-label">
+									<input class="catalog__search-input sr-only" type="checkbox">
+									<div class="catalog__search-checkbox"></div>
+
+									<div class="catalog__search-descr">
+										<span class="catalog__search-header">Materials</span>
+										<span class="tooltip">
+											<button class="tooltip__btn" aria-describedby="some_id">
+												<svg class="catalog__search-icon">
+													<use xlink:href="img/sprite.svg#sprite--info"></use>
+												</svg>
+											</button>
+											<span class="tooltip__txt" role="tooltip" id="some_id">
+												<span class="sr-only">Тултип: </span>
+												Some toolasdtiaasdp
+											</span>
+										</span>
+									</div>
+								</label>
+							</li>
+
+							<li class="catalog__search-item">
+								<label class="catalog__search-label">
+									<input class="catalog__search-input sr-only" type="checkbox">
+									<div class="catalog__search-checkbox"></div>
+									<div class="catalog__search-descr">
+
+										<span class="catalog__search-header">Plugins</span>
+
+										<span class="tooltip">
+											<button class="tooltip__btn" aria-describedby="some_id">
+												<svg class="catalog__search-icon">
+													<use xlink:href="img/sprite.svg#sprite--info"></use>
+												</svg>
+											</button>
+											<span class="tooltip__txt" role="tooltip" id="some_id">
+												<span class="sr-only">Тултип: </span>
+												Some toolasdtiaasdp
+											</span>
+										</span>
+									</div>
+								</label>
+							</li>
+
+							<li class="catalog__search-item">
+								<label class="catalog__search-label">
+									<input class="catalog__search-input sr-only" type="checkbox">
+									<div class="catalog__search-checkbox"></div>
+									<div class="catalog__search-descr">
+										<span class="catalog__search-header">All</span>
+									</div>
+								</label>
+							</li>
+						</ul>
+					</div>
+
+				</form>
+
+				<div class="catalog__suggest popup-link" href="#">
+					<a class="catalog__link" href="#">
+						Suggest instruments
+					</a>
+				</div>
+			</div>
+
+			<div class="catalog__content ">
+
+				<form class="catalog__filter" action="#">
+					<select class="catalog__filter-select select" name="sort" id="sort">
+						<option value="en">By popularity</option>
+						<option value="fr">By reviews</option>
+						<option value="fr">By cost</option>
+					</select>
+				</form>
+
+				<div class="catalog__main">
+					<div class="sidebar">
+						<h2 class="sidebar__title">Categories</h2>
+
+						<div class="sidebar-single">
+							<div class="sidebar-single__show">
+								<div class="sidebar-single__name">
+									Plugins <span>(44)</span>
+								</div>
+								<svg class="catalog__search-icon">
+									<use xlink:href="img/sprite.svg#sprite--angle-top"></use>
+								</svg>
+							</div>
+							<ul class="sidebar-single__list">
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Video conference addons <span>(25)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Photoediting for photographers <span>(10)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Email tools <span>(5)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Presentations and documents <span>(64)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Grammar writing <span>(64)</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+
+						<div class="sidebar-single">
+							<div class="sidebar-single__show">
+								<div class="sidebar-single__name">
+									Addons <span>(44)</span>
+								</div>
+								<svg class="catalog__search-icon">
+									<use xlink:href="img/sprite.svg#sprite--angle-top"></use>
+								</svg>
+							</div>
+							<ul class="sidebar-single__list">
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Video conference addons <span>(25)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Photoediting for photographers <span>(10)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Email tools <span>(5)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Presentations and documents <span>(64)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Grammar writing <span>(64)</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+
+						<div class="sidebar-single">
+							<div class="sidebar-single__show">
+								<div class="sidebar-single__name">
+									Apps <span>(44)</span>
+								</div>
+								<svg class="catalog__search-icon">
+									<use xlink:href="img/sprite.svg#sprite--angle-top"></use>
+								</svg>
+							</div>
+							<ul class="sidebar-single__list">
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Video conference addons <span>(25)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Photoediting for photographers <span>(10)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Email tools <span>(5)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Presentations and documents <span>(64)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Grammar writing <span>(64)</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+
+						<div class="sidebar-single">
+							<div class="sidebar-single__show">
+								<div class="sidebar-single__name">
+									Tools <span>(12)</span>
+								</div>
+								<svg class="catalog__search-icon">
+									<use xlink:href="img/sprite.svg#sprite--angle-top"></use>
+								</svg>
+							</div>
+							<ul class="sidebar-single__list">
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Video conference addons <span>(25)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Photoediting for photographers <span>(10)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Email tools <span>(5)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Presentations and documents <span>(64)</span>
+									</label>
+								</li>
+								<li class="sidebar-single__item">
+									<label>
+										<input type="checkbox">
+										Grammar writing <span>(64)</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="catalog__items">
+						<ul class="catalog__list">
+							<li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-1.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-2.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-3.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-4.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-5.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-6.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-7.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-8.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-9.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-10.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-11.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-12.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-13.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-14.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-4.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-5.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-9.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-8.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-13.png" alt="instrument">
+
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-2.png" alt="instrument">
+
+</li>
+						</ul>
+
+						<div class="pagination">
+							<nav class="pagination__nav">
+								<ul class="pagination__list">
+									<li>
+										<a href="#">
+											<svg class="catalog__search-icon">
+												<use xlink:href="img/sprite.svg#sprite--angle-left"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">1</a>
+									</li>
+									<li>
+										<a href="#">2</a>
+									</li>
+									<li>
+										<a class="active" href="#">3</a>
+									</li>
+									<li>
+										<a href="#">4</a>
+									</li>
+									<li>
+										<a href="#">5</a>
+									</li>
+									<li class="pagination__dots">
+										<a href="#">...</a>
+									</li>
+									<li>
+										<a href="#">24</a>
+									</li>
+									<li>
+										<a href="#">25</a>
+									</li>
+									<li>
+										<a href="#">26</a>
+									</li>
+									<li>
+										<a href="#">
+											<svg class="catalog__search-icon">
+												<use xlink:href="img/sprite.svg#sprite--angle-right"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+	</main>
+	<footer class="footer">
+	<div class="container">
+		<div class="footer__nav">
+
+			<ul class="menu">
+				<li class="menu__item">
+					<a href="#">Privacy</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Terms of use</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Feedback</a>
+				</li>
+			</ul>
+
+			<span class="footer__copy">
+				© oizglitiba 2021
+			</span>
+
+			<div class="footer__label --svg__brand-icon">
+				Izstrādāts
+			</div>
+
+		</div>
+	</div>
+</footer>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
