@@ -1,14 +1,39 @@
 .materials__promo {
-    margin-bottom: 32px;
+    margin-bottom: 50px;
     padding: 32px 40px;
     display: flex;
     align-items: center;
     background-color: #f6f7f7;
     border-radius: 16px;
+
+    @include _768 {
+        padding: 24px;
+    }
+
+    @include _630 {
+        margin-bottom: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.materials__box {
+    display: flex;
+    align-items: center;
+
+    @include _630 {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .materials__content {
     margin-right: 70px;
+
+    @include _630 {
+        margin-right: 0;
+    }
 }
 
 .materials__label {
@@ -17,6 +42,10 @@
     @extend %montserrat-500;
     color: black;
     font-size: 12px;
+
+    @include _630 {
+        text-align: center;
+    }
 }
 
 .materials__name {
@@ -25,21 +54,58 @@
     @extend %montserrat-600;
     color: $accent;
     white-space: nowrap;
+
+    @include _630 {
+        margin-bottom: 24px;
+    }
 }
 
 .materials__promo-link {
     padding: 5px 16px;
+    max-width: 86px;
+    display: flex;
+    justify-content: center;
+
+    @include _630 {
+        display: none;
+    }
+
+    &--mobile {
+        display: none;
+        @include _630 {
+            display: block;
+            max-width: 100%;
+        }
+    }
 }
 
 .materials__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include _630 {
+        flex-direction: column;
+    }
 }
 
 .materials__item {
     max-width: 240px;
     width: 100%;
+
+    @include _768 {
+        &:first-child {
+            margin-right: 32px;
+        }
+    }
+
+    @include _630 {
+        max-width: 100%;
+        &:first-child {
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
 }
 
 .materials__link {

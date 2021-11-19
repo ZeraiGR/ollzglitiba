@@ -9,14 +9,18 @@
 
 .steps__list {
     margin-right: 20px;
-    padding: 17px 0;
+    padding: 30px 0;
 }
 
 .steps__item {
-    margin-bottom: 114px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.steps__item:nth-child(2) {
+    margin-bottom: 75px;
 }
 
 .steps__item:last-child {
@@ -27,6 +31,7 @@
     @extend %montserrat-700;
     font-size: 72px;
     color: #a6ca59;
+    line-height: 1.2;
 }
 
 .steps__name {

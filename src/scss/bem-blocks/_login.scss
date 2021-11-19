@@ -1,6 +1,22 @@
-.login {
-}
-
 .login__link {
     padding: 12px 40px;
+    @extend %montserrat-500;
+
+    @include _979 {
+        padding: 10px 32px;
+        font-size: 14px;
+    }
+}
+
+.login .login__link {
+    @include _768 {
+        margin-bottom: 24px;
+        padding: 0;
+        display: inline-block;
+        background-color: transparent;
+        color: $accent;
+        &:hover {
+            background-color: transparent;
+        }
+    }
 }

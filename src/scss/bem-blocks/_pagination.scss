@@ -12,15 +12,82 @@
     align-items: center;
     font-size: 14px;
     @extend %montserrat-500;
+
+    @include _768 {
+        margin-right: 4px;
+
+        &:nth-child(5) {
+            display: none;
+        }
+
+        &:nth-child(6) {
+            display: none;
+        }
+
+        &:nth-child(8) {
+            display: none;
+        }
+
+        &:nth-child(9) {
+            display: none;
+        }
+    }
+}
+
+.pagination__list li:first-child,
+.pagination__list li:last-child {
+    background-color: #f6f7f7;
+    border-radius: 4px;
+}
+
+.pagination__list li:first-child {
+    margin-right: 24px;
+}
+
+.pagination__list li:nth-last-child(2) {
+    margin-right: 24px;
+}
+
+.pagination__list li svg path {
+    stroke: #3661f6;
+    transition: stroke 0.3s ease;
+}
+
+.pagination__list li:first-child:hover svg path,
+.pagination__list li:last-child:hover svg path,
+.pagination__list li:last-child a.active svg path,
+.pagination__list li:first-child a.active svg path {
+    stroke: #ffffff;
+}
+
+.pagination__list li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination li a.active,
+.pagination li a:hover {
+    background-color: $accent;
+    color: white;
 }
 
 .pagination__list li:last-child {
     margin-right: 0;
 }
 
-.pagination__dots {
+.pagination .pagination__dots {
     position: relative;
-    margin: 0 17px !important;
+    margin: 0 17px;
+
+    @include _768 {
+        margin-right: 4px;
+        margin-left: 0;
+    }
     &::before,
     &::after {
         position: absolute;
@@ -28,6 +95,10 @@
         width: 1px;
         background-color: #cccccc;
         content: '';
+
+        @include _768 {
+            display: none;
+        }
     }
 
     &::before {
@@ -37,4 +108,10 @@
     &::after {
         right: -9px;
     }
+}
+
+.pagination li.pagination__dots a.active,
+.pagination li.pagination__dots a:hover {
+    background-color: inherit;
+    color: inherit;
 }

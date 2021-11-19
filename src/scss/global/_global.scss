@@ -139,6 +139,7 @@ a {
 }
 
 body {
+    position: relative;
     font-family: 'Montserrat-Regular', Arial, sans-serif;
     font-size: 1rem;
     color: $text;
@@ -158,10 +159,25 @@ body {
 }
 
 .title {
-    margin-bottom: 64px;
+    margin-bottom: 55px;
     color: black;
     @extend %montserrat-700;
     font-size: 40px;
+
+    @include _979 {
+        margin-bottom: 45px;
+        font-size: 32px;
+    }
+
+    @include _768 {
+        margin-bottom: 38px;
+        font-size: 24px;
+    }
+
+    @include _630 {
+        margin-bottom: 32px;
+        font-size: 18px;
+    }
 }
 
 .sr-only {

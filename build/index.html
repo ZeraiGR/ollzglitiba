@@ -29,7 +29,7 @@
 <body>
 	<header class="header">
 	<div class="container">
-		<div class="header__nav">
+		<nav class="header__nav">
 			<a class="logo" href="#">
 				<img src="img/logo.svg" alt="logo">
 			</a>
@@ -100,7 +100,11 @@
 
 			</div>
 
-		</div>
+			<button class="header__burger">
+				<span></span>
+			</button>
+
+		</nav>
 	</div>
 </header>
 	<main class="main">
@@ -113,7 +117,7 @@
 				<span class="welcome__subject">Digital plugin library</span>
 
 				<h1 class="welcome__title">
-					Atrodi savu digitālo rīku
+					Atrodi savu <br> digitālo rīku
 				</h1>
 
 				<p class="welcome__descr">
@@ -124,12 +128,20 @@
 
 				<div class="welcome__materials materials">
 					<div class="materials__promo">
-						<div class="materials__content">
-							<span class="materials__label">Best materials</span>
-							<span class="materials__name">Educational materials</span>
-							<a class="materials__promo-link button" href="#">Explore</a>
+						<div class="materials__box">
+
+							<div class="materials__content">
+								<span class="materials__label">Best materials</span>
+								<span class="materials__name">Educational materials</span>
+								<a class="materials__promo-link button" href="#">Explore</a>
+							</div>
+
+							<img class="materials__image" src="img/doc-icons.svg" alt="images">
 						</div>
-						<img class="materials__image" src="img/doc-icons.svg" alt="images">
+
+
+						<a class="materials__promo-link materials__promo-link--mobile button" href="#">Explore</a>
+
 					</div>
 
 					<ul class="materials__list">

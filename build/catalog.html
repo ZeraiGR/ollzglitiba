@@ -29,7 +29,7 @@
 <body>
 	<header class="header">
 	<div class="container">
-		<div class="header__nav">
+		<nav class="header__nav">
 			<a class="logo" href="#">
 				<img src="img/logo.svg" alt="logo">
 			</a>
@@ -100,7 +100,11 @@
 
 			</div>
 
-		</div>
+			<button class="header__burger">
+				<span></span>
+			</button>
+
+		</nav>
 	</div>
 </header>
 	<main class="main">
@@ -120,13 +124,13 @@
 					</label>
 
 					<div class="catalog__search-category">
-						<span class="catalog__search-category">Where to search:</span>
+						<span class="catalog__search-heading">Where to search:</span>
 
 						<ul class="catalog__search-list">
 							<li class="catalog__search-item">
 								<label class="catalog__search-label">
 									<input class="catalog__search-input sr-only" type="checkbox">
-									<div class="catalog__search-checkbox"></div>
+									<div class="checkbox"></div>
 
 									<div class="catalog__search-descr">
 										<span class="catalog__search-header">Materials</span>
@@ -148,7 +152,7 @@
 							<li class="catalog__search-item">
 								<label class="catalog__search-label">
 									<input class="catalog__search-input sr-only" type="checkbox">
-									<div class="catalog__search-checkbox"></div>
+									<div class="checkbox"></div>
 									<div class="catalog__search-descr">
 
 										<span class="catalog__search-header">Plugins</span>
@@ -171,7 +175,7 @@
 							<li class="catalog__search-item">
 								<label class="catalog__search-label">
 									<input class="catalog__search-input sr-only" type="checkbox">
-									<div class="catalog__search-checkbox"></div>
+									<div class="checkbox"></div>
 									<div class="catalog__search-descr">
 										<span class="catalog__search-header">All</span>
 									</div>
@@ -187,6 +191,8 @@
 						Suggest instruments
 					</a>
 				</div>
+
+				<button class="catalog__mobile-search button">Search</button>
 			</div>
 
 			<div class="catalog__content ">
@@ -202,45 +208,139 @@
 				<div class="catalog__main">
 					<div class="sidebar">
 						<h2 class="sidebar__title">Categories</h2>
+						<h3 class="sidebar__title-search">Search</h3>
+
+						<button class="sidebar__close">
+							<span></span>
+						</button>
+
+						<form class="catalog__search catalog__search--mobile" action="#">
+							<label class="catalog__search-block">
+								<input class="catalog__search-enter" type="search" placeholder="Search">
+
+								<button class="catalog__search-btn button" type="button">
+									Search
+								</button>
+							</label>
+
+							<div class="catalog__search-category">
+								<span class="catalog__search-heading">Where to search:</span>
+
+								<ul class="catalog__search-list">
+									<li class="catalog__search-item">
+										<label class="catalog__search-label">
+											<input class="catalog__search-input sr-only" type="checkbox">
+											<div class="checkbox"></div>
+
+											<div class="catalog__search-descr">
+												<span class="catalog__search-header">Materials</span>
+												<span class="tooltip">
+													<button class="tooltip__btn" aria-describedby="some_id">
+														<svg class="catalog__search-icon">
+															<use xlink:href="img/sprite.svg#sprite--info"></use>
+														</svg>
+													</button>
+													<span class="tooltip__txt" role="tooltip">
+														<span class="sr-only">Тултип: </span>
+														Some toolasdtiaasdp
+													</span>
+												</span>
+											</div>
+										</label>
+									</li>
+
+									<li class="catalog__search-item">
+										<label class="catalog__search-label">
+											<input class="catalog__search-input sr-only" type="checkbox">
+											<div class="checkbox"></div>
+											<div class="catalog__search-descr">
+
+												<span class="catalog__search-header">Plugins</span>
+
+												<span class="tooltip">
+													<button class="tooltip__btn" aria-describedby="some_id">
+														<svg class="catalog__search-icon">
+															<use xlink:href="img/sprite.svg#sprite--info"></use>
+														</svg>
+													</button>
+													<span class="tooltip__txt" role="tooltip">
+														<span class="sr-only">Тултип: </span>
+														Some toolasdtiaasdp
+													</span>
+												</span>
+											</div>
+										</label>
+									</li>
+
+									<li class="catalog__search-item">
+										<label class="catalog__search-label">
+											<input class="catalog__search-input sr-only" type="checkbox">
+											<div class="checkbox"></div>
+											<div class="catalog__search-descr">
+												<span class="catalog__search-header">All</span>
+											</div>
+										</label>
+									</li>
+								</ul>
+							</div>
+
+						</form>
 
 						<div class="sidebar-single">
 							<div class="sidebar-single__show">
 								<div class="sidebar-single__name">
 									Plugins <span>(44)</span>
 								</div>
-								<svg class="catalog__search-icon">
+								<svg class="catalog__search-icon show">
 									<use xlink:href="img/sprite.svg#sprite--angle-top"></use>
 								</svg>
 							</div>
-							<ul class="sidebar-single__list">
+							<ul class="sidebar-single__list show">
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Video conference addons <span>(25)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Video conference addons <span>(25)</span>
+										</div>
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Photoediting for photographers <span>(10)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Photoediting for photographers <span>(10)</span>
+										</div>
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Email tools <span>(5)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Email tools <span>(5)</span>
+										</div>
+
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Presentations and documents <span>(64)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Presentations and documents <span>(64)</span>
+										</div>
+
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Grammar writing <span>(64)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Grammar writing <span>(64)</span>
+										</div>
 									</label>
 								</li>
 							</ul>
@@ -258,32 +358,49 @@
 							<ul class="sidebar-single__list">
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Video conference addons <span>(25)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Video conference addons <span>(25)</span>
+										</div>
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Photoediting for photographers <span>(10)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Photoediting for photographers <span>(10)</span>
+										</div>
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Email tools <span>(5)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Email tools <span>(5)</span>
+										</div>
+
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Presentations and documents <span>(64)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Presentations and documents <span>(64)</span>
+										</div>
+
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Grammar writing <span>(64)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Grammar writing <span>(64)</span>
+										</div>
 									</label>
 								</li>
 							</ul>
@@ -301,32 +418,49 @@
 							<ul class="sidebar-single__list">
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Video conference addons <span>(25)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Video conference addons <span>(25)</span>
+										</div>
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Photoediting for photographers <span>(10)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Photoediting for photographers <span>(10)</span>
+										</div>
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Email tools <span>(5)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Email tools <span>(5)</span>
+										</div>
+
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Presentations and documents <span>(64)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Presentations and documents <span>(64)</span>
+										</div>
+
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Grammar writing <span>(64)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Grammar writing <span>(64)</span>
+										</div>
 									</label>
 								</li>
 							</ul>
@@ -344,37 +478,57 @@
 							<ul class="sidebar-single__list">
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Video conference addons <span>(25)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Video conference addons <span>(25)</span>
+										</div>
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Photoediting for photographers <span>(10)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Photoediting for photographers <span>(10)</span>
+										</div>
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Email tools <span>(5)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Email tools <span>(5)</span>
+										</div>
+
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Presentations and documents <span>(64)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Presentations and documents <span>(64)</span>
+										</div>
+
 									</label>
 								</li>
 								<li class="sidebar-single__item">
 									<label>
-										<input type="checkbox">
-										Grammar writing <span>(64)</span>
+										<input class="sidebar-single__checkbox sr-only" type="checkbox">
+										<div class="checkbox"></div>
+										<div class="sidebar-single__text">
+											Grammar writing <span>(64)</span>
+										</div>
 									</label>
 								</li>
 							</ul>
 						</div>
 
+						<button class="sidebar__show-results button">
+							Show all results
+						</button>
 					</div>
 					<div class="catalog__items">
 						<ul class="catalog__list">
@@ -446,8 +600,8 @@
 								<ul class="pagination__list">
 									<li>
 										<a href="#">
-											<svg class="catalog__search-icon">
-												<use xlink:href="img/sprite.svg#sprite--angle-left"></use>
+											<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.75439 0.947388L2.33324 6.08322L7.75439 11.219" stroke-width="2" />
 											</svg>
 										</a>
 									</li>
@@ -479,9 +633,9 @@
 										<a href="#">26</a>
 									</li>
 									<li>
-										<a href="#">
-											<svg class="catalog__search-icon">
-												<use xlink:href="img/sprite.svg#sprite--angle-right"></use>
+										<a class="active" href="#">
+											<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.24561 0.947388L6.66676 6.08322L1.24561 11.219" stroke="white" stroke-width="2" />
 											</svg>
 										</a>
 									</li>

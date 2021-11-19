@@ -7,16 +7,41 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include _630 {
+        padding: 40px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer__copy {
+    font-size: 14px;
+    @extend %montserrat-500;
+
+    @include _630 {
+        margin-bottom: 40px;
+    }
 }
 
 .footer__label {
     padding-right: 96px;
     display: flex;
     align-items: center;
+    @extend %montserrat-500;
+
+    @include _630 {
+        padding-right: 4px;
+        padding-bottom: 58px;
+    }
 }
 
 .footer__label.--svg__brand-icon {
     background-repeat: no-repeat;
     background-position: right center;
     height: 34px;
+
+    @include _630 {
+        background-position: right bottom;
+    }
 }

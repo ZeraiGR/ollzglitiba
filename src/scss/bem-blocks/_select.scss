@@ -8,4 +8,8 @@
     appearance: none;
     border: none;
     outline: transparent;
+
+    @include _979 {
+        font-size: 13px;
+    }
 }
