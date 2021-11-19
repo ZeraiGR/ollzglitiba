@@ -1,0 +1,105 @@
+<section class="favorite format">
+	<div class="container">
+		<div class="favorite__inner">
+
+			<h1 class="title favorite__title">Favourite</h1>
+
+			<div class="favorite__content">
+				<form class="favorite__filter" action="#">
+					<select class="favorite__filter-select select" name="sort" id="sort">
+						<option value="en">By popularity</option>
+						<option value="fr">By reviews</option>
+						<option value="fr">By cost</option>
+					</select>
+				</form>
+
+				<div class="favorite__listing">
+
+					<ul class="favorite__category">
+						<li class="favorite__item">All</li>
+						<li class="favorite__item active">Instruments</li>
+						<li class="favorite__item">Materials</li>
+					</ul>
+
+					<div class="favorite__items">
+
+						<ul class="favorite__list">
+							@@loop('../bem-blocks/_instrument--catalog.html', [
+							{"instrumentImg": "img/instrument-1.png"},
+							{"instrumentImg": "img/instrument-2.png"},
+							{"instrumentImg": "img/instrument-3.png"},
+							{"instrumentImg": "img/instrument-4.png"},
+							{"instrumentImg": "img/instrument-5.png"},
+							{"instrumentImg": "img/instrument-6.png"},
+							{"instrumentImg": "img/instrument-7.png"},
+							{"instrumentImg": "img/instrument-8.png"},
+							{"instrumentImg": "img/instrument-9.png"},
+							{"instrumentImg": "img/instrument-10.png"},
+							{"instrumentImg": "img/instrument-11.png"},
+							{"instrumentImg": "img/instrument-12.png"},
+							{"instrumentImg": "img/instrument-13.png"},
+							{"instrumentImg": "img/instrument-14.png"},
+							{"instrumentImg": "img/instrument-4.png"},
+							{"instrumentImg": "img/instrument-5.png"},
+							{"instrumentImg": "img/instrument-9.png"},
+							{"instrumentImg": "img/instrument-8.png"},
+							{"instrumentImg": "img/instrument-13.png"},
+							{"instrumentImg": "img/instrument-2.png"},
+							])
+						</ul>
+
+						<div class="pagination">
+							<nav class="pagination__nav">
+								<ul class="pagination__list">
+									<li>
+										<a href="#">
+											<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.75439 0.947388L2.33324 6.08322L7.75439 11.219" stroke-width="2" />
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">1</a>
+									</li>
+									<li>
+										<a href="#">2</a>
+									</li>
+									<li>
+										<a class="active" href="#">3</a>
+									</li>
+									<li>
+										<a href="#">4</a>
+									</li>
+									<li>
+										<a href="#">5</a>
+									</li>
+									<li class="pagination__dots">
+										<a href="#">...</a>
+									</li>
+									<li>
+										<a href="#">24</a>
+									</li>
+									<li>
+										<a href="#">25</a>
+									</li>
+									<li>
+										<a href="#">26</a>
+									</li>
+									<li>
+										<a class="active" href="#">
+											<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.24561 0.947388L6.66676 6.08322L1.24561 11.219" stroke="white" stroke-width="2" />
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section>

@@ -17,8 +17,13 @@
     &.open {
         opacity: 1;
         visibility: visible;
-        overflow: hidden;
+        overflow: auto;
+        height: 100vh;
         padding: 24px 16px;
+
+        .sidebar-single__show {
+            width: 100%;
+        }
 
         .catalog__search--mobile {
             display: block;

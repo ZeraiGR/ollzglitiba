@@ -7,8 +7,15 @@
     align-items: center;
     background-color: #f0f0f0;
     border: 1px solid rgba(240, 240, 240, 0.7);
+    border: 1px solid transparent;
     border-radius: 16px;
     cursor: pointer;
+    transition: border-color 0.3s;
+
+    &:hover {
+        border-color: #cccccc;
+        transition: border-color 0.3s;
+    }
 
     &--catalog {
         margin-bottom: 24px;

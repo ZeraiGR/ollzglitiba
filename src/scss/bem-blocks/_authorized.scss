@@ -1,0 +1,124 @@
+.authorized {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @include _768 {
+        width: 100%;
+    }
+}
+
+.authorized__favourite {
+    margin-right: 2.5rem;
+    display: block;
+    font-size: 0;
+    @extend %montserrat-500;
+    background-image: url('../img/favorite.svg');
+    background-size: contain;
+    width: 1rem;
+    height: 0.875rem;
+
+    @include _768 {
+        display: none;
+    }
+
+    &.active {
+        background-image: url('../img/like-active-icon.svg');
+    }
+}
+
+.authorized__account {
+    @include _768 {
+        width: 100%;
+    }
+}
+
+.authorized__portrain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 2rem;
+    height: 2rem;
+    @extend %montserrat-500;
+    line-height: 1;
+    color: #ffffff;
+    background-color: #a6ca59;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @include _768 {
+        display: none;
+    }
+}
+
+.authorized__info {
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    right: 0;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.11);
+    border-radius: 16px;
+    background-color: #ffffff;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    @include _768 {
+        position: static;
+        margin-bottom: 24px;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
+
+.authorized__info {
+    .authorized__portrain {
+        margin-right: 16px;
+        cursor: initial;
+
+        @include _768 {
+            display: flex;
+        }
+    }
+}
+
+.authorized__content {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+
+    @include _768 {
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+
+.authorized__name {
+    @extend %montserrat-500;
+    font-size: 0.875rem;
+    white-space: nowrap;
+}
+
+.authorized__signout {
+    padding-right: 1.75rem;
+    display: block;
+    @extend %montserrat-500;
+    text-align: right;
+    color: $accent;
+    background-image: url('../img/logout-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    @include _768 {
+        width: 14px;
+        height: 16px;
+        font-size: 0;
+    }
+}

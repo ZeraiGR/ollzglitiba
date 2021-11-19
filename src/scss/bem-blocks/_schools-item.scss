@@ -1,0 +1,62 @@
+.schools-item {
+    min-height: 19.75rem;
+    display: flex;
+    flex-direction: column;
+
+    &.liked {
+        .schools-item__like-icon {
+            fill: #ef4545;
+            path {
+                stroke: #ef4545;
+            }
+        }
+    }
+
+    @include _768 {
+        min-height: auto;
+    }
+}
+
+.schools-item:hover {
+    .schools-item__img {
+        height: 7.5rem;
+        width: 100%;
+
+        @include _630 {
+            height: auto;
+        }
+
+        @include _414 {
+            height: 120px;
+        }
+    }
+
+    .schools-item__preview {
+        display: block;
+    }
+}
+
+.schools-item__img {
+    @include _414 {
+        height: 120px;
+    }
+}
+
+.schools-item__preview {
+    margin-top: 1rem;
+
+    @include _768 {
+        margin-bottom: 16px;
+    }
+}
+
+.schools-item__like {
+    &:hover {
+        .schools-item__like-icon {
+            fill: #ef4545;
+            path {
+                stroke: #ef4545;
+            }
+        }
+    }
+}

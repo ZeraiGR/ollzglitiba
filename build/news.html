@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="o!zglitiba project">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>o!zglitiba news</title>
+</head>
+
+
+<body>
+	<header class="header">
+	<div class="container">
+		<nav class="header__nav">
+			<a class="logo" href="#">
+				<img src="img/logo.svg" alt="logo">
+			</a>
+
+			<div class="header__top">
+
+				<ul class="menu header__menu">
+					<li class="menu__item">
+						<a href="#">Meklēt rīku</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Lasīj jaunumus</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Skatīt goda dēlis</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Favourites</a>
+					</li>
+				</ul>
+
+				<form class="language header__language" action="#">
+					<select class="select" name="language" id="language">
+						<option value="en">en</option>
+						<option value="fr">fr</option>
+					</select>
+				</form>
+
+				<div class="account">
+					<!-- <div class="register">
+						<a class="register__link button" href="#">
+							Create account
+						</a>
+					</div> -->
+
+					<!-- <div class="login">
+						<a class="login__link button" href="#">
+							Login
+						</a>
+					</div> -->
+
+					<div class="authorized">
+						<a class="authorized__favourite" href="#">
+							Favourites
+						</a>
+						<div class="authorized__account">
+							<button class="authorized__portrain" id="portrainBtn">
+								R
+							</button>
+
+							<div class="authorized__info">
+
+								<div class="authorized__content">
+									<span class="authorized__portrain">
+										R
+									</span>
+									<span class="authorized__name">
+										Johnatan Williams
+									</span>
+								</div>
+
+								<a class="authorized__signout" href="#">
+									Sign out
+								</a>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<button class="header__burger">
+				<span></span>
+			</button>
+
+		</nav>
+	</div>
+</header>
+	<main class="main">
+		<section class="news format">
+	<div class="container">
+		<div class="news__inner">
+			<h1 class="title news__title">News</h1>
+
+			<ul class="news__list">
+				<li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-1.jpg" alt="news-image">
+		<span class="news-item__title">Duolingo boss plans to take on TikTok with maths</span>
+		<span class="news-item__date">24 september 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">33</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">18</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-2.jpg" alt="news-image">
+		<span class="news-item__title">Are schools back to? Not quite</span>
+		<span class="news-item__date">24 may 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">23</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">2</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-3.jpg" alt="news-image">
+		<span class="news-item__title">Five things to take to university</span>
+		<span class="news-item__date">23 july 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">11</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">2</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-4.jpg" alt="news-image">
+		<span class="news-item__title">The Kenyans who are helping the world</span>
+		<span class="news-item__date">21 april 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">4</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">45</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-5.jpg" alt="news-image">
+		<span class="news-item__title">What are the rules for schools in Wales?</span>
+		<span class="news-item__date">8 june 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">78</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">22</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-6.jpg" alt="news-image">
+		<span class="news-item__title">Top grades reach record high</span>
+		<span class="news-item__date">12 june 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">23</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">16</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-7.jpg" alt="news-image">
+		<span class="news-item__title">The Week in Cartoons for Oct. 4-8</span>
+		<span class="news-item__date">6 october 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">15</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">4</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-2.jpg" alt="news-image">
+		<span class="news-item__title">Are schools back to? Not quite</span>
+		<span class="news-item__date">24 may 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">23</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">2</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-1.jpg" alt="news-image">
+		<span class="news-item__title">Duolingo boss plans to take on TikTok with maths</span>
+		<span class="news-item__date">24 september 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">33</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">18</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-2.jpg" alt="news-image">
+		<span class="news-item__title">Are schools back to? Not quite</span>
+		<span class="news-item__date">24 may 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">23</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">2</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-3.jpg" alt="news-image">
+		<span class="news-item__title">Five things to take to university</span>
+		<span class="news-item__date">23 july 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">11</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">2</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-4.jpg" alt="news-image">
+		<span class="news-item__title">The Kenyans who are helping the world</span>
+		<span class="news-item__date">21 april 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">4</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">45</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-5.jpg" alt="news-image">
+		<span class="news-item__title">What are the rules for schools in Wales?</span>
+		<span class="news-item__date">8 june 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">78</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">22</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-6.jpg" alt="news-image">
+		<span class="news-item__title">Top grades reach record high</span>
+		<span class="news-item__date">12 june 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">23</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">16</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-7.jpg" alt="news-image">
+		<span class="news-item__title">The Week in Cartoons for Oct. 4-8</span>
+		<span class="news-item__date">6 october 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">15</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">4</span>
+		</a>
+	</div>
+</li><li class="news-item">
+	<a class="news-item__link" href="#">
+		<img class="news-item__img" src="img/news-4.jpg" alt="news-image">
+		<span class="news-item__title">The Kenyans who are helping the world</span>
+		<span class="news-item__date">21 april 2021</span>
+		<p class="news-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="news-item__feedback">
+		<button class="news-item__like">
+			<svg class="news-item__like-icon" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__label">Like</span>
+			<span class="news-item__like-num">4</span>
+		</button>
+		<a class="news-item__comment" href="#">
+			<svg class="news-item__comment-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13 6.66668C13.002 7.54668 12.7967 8.41467 12.4 9.20001C11.4407 11.1193 9.47933 12.3327 7.33333 12.3333C6.45333 12.3353 5.58534 12.13 4.80001 11.7334L1 13L2.26666 9.20001C1.87 8.41467 1.66467 7.54668 1.66667 6.66668C1.66733 4.52068 2.88067 2.55934 4.80001 1.60001C5.58534 1.20334 6.45333 0.998014 7.33333 1.00001H7.66667C10.544 1.15868 12.8413 3.45601 13 6.33335V6.66668Z"
+					stroke="#808080" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="news-item__comment-num">45</span>
+		</a>
+	</div>
+</li>
+			</ul>
+
+			<div class="pagination">
+				<nav class="pagination__nav">
+					<ul class="pagination__list">
+						<li>
+							<a href="#">
+								<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.75439 0.947388L2.33324 6.08322L7.75439 11.219" stroke-width="2" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a class="active" href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">5</a>
+						</li>
+						<li class="pagination__dots">
+							<a href="#">...</a>
+						</li>
+						<li>
+							<a href="#">24</a>
+						</li>
+						<li>
+							<a href="#">25</a>
+						</li>
+						<li>
+							<a href="#">26</a>
+						</li>
+						<li>
+							<a class="active" href="#">
+								<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.24561 0.947388L6.66676 6.08322L1.24561 11.219" stroke="white" stroke-width="2" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+
+
+
+
+
+
+	</div>
+</section>
+	</main>
+	<footer class="footer">
+	<div class="container">
+		<div class="footer__nav">
+
+			<ul class="menu">
+				<li class="menu__item">
+					<a href="#">Privacy</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Terms of use</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Feedback</a>
+				</li>
+			</ul>
+
+			<span class="footer__copy">
+				© oizglitiba 2021
+			</span>
+
+			<div class="footer__label --svg__brand-icon">
+				Izstrādāts
+			</div>
+
+		</div>
+	</div>
+</footer>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="o!zglitiba project">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>o!zglitiba favorite</title>
+</head>
+
+
+<body>
+	<header class="header">
+	<div class="container">
+		<nav class="header__nav">
+			<a class="logo" href="#">
+				<img src="img/logo.svg" alt="logo">
+			</a>
+
+			<div class="header__top">
+
+				<ul class="menu header__menu">
+					<li class="menu__item">
+						<a href="#">Meklēt rīku</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Lasīj jaunumus</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Skatīt goda dēlis</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Favourites</a>
+					</li>
+				</ul>
+
+				<form class="language header__language" action="#">
+					<select class="select" name="language" id="language">
+						<option value="en">en</option>
+						<option value="fr">fr</option>
+					</select>
+				</form>
+
+				<div class="account">
+					<!-- <div class="register">
+						<a class="register__link button" href="#">
+							Create account
+						</a>
+					</div> -->
+
+					<!-- <div class="login">
+						<a class="login__link button" href="#">
+							Login
+						</a>
+					</div> -->
+
+					<div class="authorized">
+						<a class="authorized__favourite active" href="#">
+							Favourites
+						</a>
+						<div class="authorized__account">
+							<button class="authorized__portrain" id="portrainBtn">
+								R
+							</button>
+
+							<div class="authorized__info">
+
+								<div class="authorized__content">
+									<span class="authorized__portrain">
+										R
+									</span>
+									<span class="authorized__name">
+										Johnatan Williams
+									</span>
+								</div>
+
+								<a class="authorized__signout" href="#">
+									Sign out
+								</a>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<button class="header__burger">
+				<span></span>
+			</button>
+
+		</nav>
+	</div>
+</header>
+	<main class="main">
+		<section class="favorite format">
+	<div class="container">
+		<div class="favorite__inner">
+
+			<h1 class="title favorite__title">Favourite</h1>
+
+			<div class="favorite__content">
+				<form class="favorite__filter" action="#">
+					<select class="favorite__filter-select select" name="sort" id="sort">
+						<option value="en">By popularity</option>
+						<option value="fr">By reviews</option>
+						<option value="fr">By cost</option>
+					</select>
+				</form>
+
+				<div class="favorite__listing">
+
+					<ul class="favorite__category">
+						<li class="favorite__item">All</li>
+						<li class="favorite__item active">Instruments</li>
+						<li class="favorite__item">Materials</li>
+					</ul>
+
+					<div class="favorite__items">
+
+						<ul class="favorite__list">
+							<li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-1.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-2.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-3.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-4.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-5.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-6.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-7.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-8.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-9.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-10.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-11.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-12.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-13.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-14.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-4.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-5.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-9.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-8.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-13.png" alt="instrument">
+</li><li class="instrument instrument--catalog">
+	<img class="instrument__img" src="img/instrument-2.png" alt="instrument">
+</li>
+						</ul>
+
+						<div class="pagination">
+							<nav class="pagination__nav">
+								<ul class="pagination__list">
+									<li>
+										<a href="#">
+											<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7.75439 0.947388L2.33324 6.08322L7.75439 11.219" stroke-width="2" />
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">1</a>
+									</li>
+									<li>
+										<a href="#">2</a>
+									</li>
+									<li>
+										<a class="active" href="#">3</a>
+									</li>
+									<li>
+										<a href="#">4</a>
+									</li>
+									<li>
+										<a href="#">5</a>
+									</li>
+									<li class="pagination__dots">
+										<a href="#">...</a>
+									</li>
+									<li>
+										<a href="#">24</a>
+									</li>
+									<li>
+										<a href="#">25</a>
+									</li>
+									<li>
+										<a href="#">26</a>
+									</li>
+									<li>
+										<a class="active" href="#">
+											<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.24561 0.947388L6.66676 6.08322L1.24561 11.219" stroke="white" stroke-width="2" />
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+	</main>
+	<footer class="footer">
+	<div class="container">
+		<div class="footer__nav">
+
+			<ul class="menu">
+				<li class="menu__item">
+					<a href="#">Privacy</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Terms of use</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Feedback</a>
+				</li>
+			</ul>
+
+			<span class="footer__copy">
+				© oizglitiba 2021
+			</span>
+
+			<div class="footer__label --svg__brand-icon">
+				Izstrādāts
+			</div>
+
+		</div>
+	</div>
+</footer>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

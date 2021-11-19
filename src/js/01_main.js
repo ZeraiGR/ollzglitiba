@@ -158,13 +158,23 @@ window.addEventListener('DOMContentLoaded', function loaded() {
     function layoutHandler(e) {
         const burger = document.querySelector('.header__burger'),
             menu = document.querySelector('.header__top'),
-            target = e.target;
+            target = e.target,
+            loginInfo = document.querySelector('.authorized__info');
         if (
             target.closest('.header__top') == null &&
             !target.classList.contains('header__burger')
         ) {
             burger.classList.remove('active');
             menu.classList.remove('active');
+        }
+
+        console.log();
+
+        if (
+            target.closest('.authorized__info') == null &&
+            !target.classList.contains('authorized__portrain')
+        ) {
+            loginInfo.classList.remove('active');
         }
     }
 
@@ -187,12 +197,14 @@ window.addEventListener('DOMContentLoaded', function loaded() {
     function searchBtnHandler() {
         const searchBtn = document.querySelector('.catalog__mobile-search'),
             searchFilter = document.querySelector('.sidebar'),
-            closeFilter = document.querySelector('.sidebar__close');
+            closeFilter = document.querySelector('.sidebar__close'),
+            body = document.querySelector('body');
 
         if (searchBtn) {
             searchBtn.addEventListener('click', function () {
                 searchBtn.classList.add('open');
                 searchFilter.classList.add('open');
+                body.classList.add('lock');
             });
         }
 
@@ -200,6 +212,41 @@ window.addEventListener('DOMContentLoaded', function loaded() {
             closeFilter.addEventListener('click', function () {
                 searchBtn.classList.remove('open');
                 searchFilter.classList.remove('open');
+                body.classList.remove('lock');
+            });
+        }
+    }
+
+    function loginHandler() {
+        const loginBtn = document.querySelector('.authorized__portrain'),
+            loginInfo = document.querySelector('.authorized__info');
+
+        if (loginBtn) {
+            loginBtn.addEventListener('click', function () {
+                loginInfo.classList.toggle('active');
+
+                if (loginInfo.classList.contains('active')) {
+                    window.addEventListener('click', layoutHandler);
+                } else {
+                    window.removeEventListener('click', layoutHandler);
+                }
+            });
+        }
+    }
+
+    function favoriteTabsHandler() {
+        const tabs = document.querySelector('.favorite__category'),
+            tab = document.querySelectorAll('.favorite__item');
+
+        if (tabs) {
+            tabs.addEventListener('click', (e) => {
+                const target = e.target;
+                if (target.classList.contains('favorite__item')) {
+                    tab.forEach((el) => {
+                        el.classList.remove('active');
+                    });
+                    target.classList.add('active');
+                }
             });
         }
     }
@@ -208,4 +255,9 @@ window.addEventListener('DOMContentLoaded', function loaded() {
     sidebarToggle();
     menuBurgerHandler();
     searchBtnHandler();
+    loginHandler();
+    favoriteTabsHandler();
 });
+
+// https://jsfiddle.net/95tnmdyr/
+// it's solution for the smooth animation

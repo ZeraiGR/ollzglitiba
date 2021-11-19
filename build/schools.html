@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+				content="o!zglitiba project">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>o!zglitiba schools</title>
+</head>
+
+
+<body>
+	<header class="header">
+	<div class="container">
+		<nav class="header__nav">
+			<a class="logo" href="#">
+				<img src="img/logo.svg" alt="logo">
+			</a>
+
+			<div class="header__top">
+
+				<ul class="menu header__menu">
+					<li class="menu__item">
+						<a href="#">Meklēt rīku</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Lasīj jaunumus</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Skatīt goda dēlis</a>
+					</li>
+					<li class="menu__item">
+						<a href="#">Favourites</a>
+					</li>
+				</ul>
+
+				<form class="language header__language" action="#">
+					<select class="select" name="language" id="language">
+						<option value="en">en</option>
+						<option value="fr">fr</option>
+					</select>
+				</form>
+
+				<div class="account">
+					<!-- <div class="register">
+						<a class="register__link button" href="#">
+							Create account
+						</a>
+					</div> -->
+
+					<!-- <div class="login">
+						<a class="login__link button" href="#">
+							Login
+						</a>
+					</div> -->
+
+					<div class="authorized">
+						<a class="authorized__favourite" href="#">
+							Favourites
+						</a>
+						<div class="authorized__account">
+							<button class="authorized__portrain" id="portrainBtn">
+								R
+							</button>
+
+							<div class="authorized__info">
+
+								<div class="authorized__content">
+									<span class="authorized__portrain">
+										R
+									</span>
+									<span class="authorized__name">
+										Johnatan Williams
+									</span>
+								</div>
+
+								<a class="authorized__signout" href="#">
+									Sign out
+								</a>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<button class="header__burger">
+				<span></span>
+			</button>
+
+		</nav>
+	</div>
+</header>
+	<main class="main">
+		<section class="schools format">
+	<div class="container">
+		<div class="schools__inner">
+			<div class="schools__top">
+				<h1 class="schools__title title">Schools</h1>
+				<a class="schools__suggest" href="#">Suggest school</a>
+			</div>
+
+			<ul class="schools__list">
+				<li class="schools-item @@isLiked">
+	<a class="schools-item__link" href="#">
+		<img class="schools-item__img" src="img/school-1.jpg" alt="news-image">
+		<span class="schools-item__title">Duolingo boss plans to take on TikTok with maths</span>
+		<p class="schools-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="schools-item__feedback">
+		<button class="schools-item__like">
+			<svg class="schools-item__like-icon" width="16" height="14" viewBox="0 0 16 14"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="schools-item__label">Like</span>
+			<span class="schools-item__like-num">33</span>
+		</button>
+	</div>
+
+</li><li class="schools-item @@isLiked">
+	<a class="schools-item__link" href="#">
+		<img class="schools-item__img" src="img/school-2.jpg" alt="news-image">
+		<span class="schools-item__title">Are schools back to? Not quite</span>
+		<p class="schools-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="schools-item__feedback">
+		<button class="schools-item__like">
+			<svg class="schools-item__like-icon" width="16" height="14" viewBox="0 0 16 14"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="schools-item__label">Like</span>
+			<span class="schools-item__like-num">23</span>
+		</button>
+	</div>
+
+</li><li class="schools-item liked">
+	<a class="schools-item__link" href="#">
+		<img class="schools-item__img" src="img/school-3.jpg" alt="news-image">
+		<span class="schools-item__title">Five things to take to university</span>
+		<p class="schools-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="schools-item__feedback">
+		<button class="schools-item__like">
+			<svg class="schools-item__like-icon" width="16" height="14" viewBox="0 0 16 14"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="schools-item__label">Like</span>
+			<span class="schools-item__like-num">11</span>
+		</button>
+	</div>
+
+</li><li class="schools-item @@isLiked">
+	<a class="schools-item__link" href="#">
+		<img class="schools-item__img" src="img/school-4.jpg" alt="news-image">
+		<span class="schools-item__title">The Kenyans who are helping the world</span>
+		<p class="schools-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="schools-item__feedback">
+		<button class="schools-item__like">
+			<svg class="schools-item__like-icon" width="16" height="14" viewBox="0 0 16 14"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="schools-item__label">Like</span>
+			<span class="schools-item__like-num">4</span>
+		</button>
+	</div>
+
+</li><li class="schools-item @@isLiked">
+	<a class="schools-item__link" href="#">
+		<img class="schools-item__img" src="img/school-5.jpg" alt="news-image">
+		<span class="schools-item__title">What are the rules for schools in Wales?</span>
+		<p class="schools-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="schools-item__feedback">
+		<button class="schools-item__like">
+			<svg class="schools-item__like-icon" width="16" height="14" viewBox="0 0 16 14"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="schools-item__label">Like</span>
+			<span class="schools-item__like-num">78</span>
+		</button>
+	</div>
+
+</li><li class="schools-item @@isLiked">
+	<a class="schools-item__link" href="#">
+		<img class="schools-item__img" src="img/school-6.jpg" alt="news-image">
+		<span class="schools-item__title">Top grades reach record high</span>
+		<p class="schools-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="schools-item__feedback">
+		<button class="schools-item__like">
+			<svg class="schools-item__like-icon" width="16" height="14" viewBox="0 0 16 14"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="schools-item__label">Like</span>
+			<span class="schools-item__like-num">23</span>
+		</button>
+	</div>
+
+</li><li class="schools-item @@isLiked">
+	<a class="schools-item__link" href="#">
+		<img class="schools-item__img" src="img/school-7.jpg" alt="news-image">
+		<span class="schools-item__title">The Week in Cartoons for Oct. 4-8</span>
+		<p class="schools-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="schools-item__feedback">
+		<button class="schools-item__like">
+			<svg class="schools-item__like-icon" width="16" height="14" viewBox="0 0 16 14"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="schools-item__label">Like</span>
+			<span class="schools-item__like-num">15</span>
+		</button>
+	</div>
+
+</li><li class="schools-item @@isLiked">
+	<a class="schools-item__link" href="#">
+		<img class="schools-item__img" src="img/school-8.jpg" alt="news-image">
+		<span class="schools-item__title">Are schools back to? Not quite</span>
+		<p class="schools-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="schools-item__feedback">
+		<button class="schools-item__like">
+			<svg class="schools-item__like-icon" width="16" height="14" viewBox="0 0 16 14"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="schools-item__label">Like</span>
+			<span class="schools-item__like-num">23</span>
+		</button>
+	</div>
+
+</li><li class="schools-item @@isLiked">
+	<a class="schools-item__link" href="#">
+		<img class="schools-item__img" src="img/school-9.jpg" alt="news-image">
+		<span class="schools-item__title">Duolingo boss plans to take on TikTok with maths</span>
+		<p class="schools-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="schools-item__feedback">
+		<button class="schools-item__like">
+			<svg class="schools-item__like-icon" width="16" height="14" viewBox="0 0 16 14"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="schools-item__label">Like</span>
+			<span class="schools-item__like-num">33</span>
+		</button>
+	</div>
+
+</li><li class="schools-item @@isLiked">
+	<a class="schools-item__link" href="#">
+		<img class="schools-item__img" src="img/school-10.jpg" alt="news-image">
+		<span class="schools-item__title">Are schools back to? Not quite</span>
+		<p class="schools-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="schools-item__feedback">
+		<button class="schools-item__like">
+			<svg class="schools-item__like-icon" width="16" height="14" viewBox="0 0 16 14"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="schools-item__label">Like</span>
+			<span class="schools-item__like-num">23</span>
+		</button>
+	</div>
+
+</li><li class="schools-item liked">
+	<a class="schools-item__link" href="#">
+		<img class="schools-item__img" src="img/school-2.jpg" alt="news-image">
+		<span class="schools-item__title">Five things to take to university</span>
+		<p class="schools-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="schools-item__feedback">
+		<button class="schools-item__like">
+			<svg class="schools-item__like-icon" width="16" height="14" viewBox="0 0 16 14"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="schools-item__label">Like</span>
+			<span class="schools-item__like-num">11</span>
+		</button>
+	</div>
+
+</li><li class="schools-item @@isLiked">
+	<a class="schools-item__link" href="#">
+		<img class="schools-item__img" src="img/school-5.jpg" alt="news-image">
+		<span class="schools-item__title">The Kenyans who are helping the world</span>
+		<p class="schools-item__preview">
+			Some news preview for brief announce in the news card in 2 or 3 lines for more information
+		</p>
+	</a>
+
+	<div class="schools-item__feedback">
+		<button class="schools-item__like">
+			<svg class="schools-item__like-icon" width="16" height="14" viewBox="0 0 16 14"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M13.6796 2.07467C13.0192 1.38667 12.1238 1 11.19 1C10.2563 1 9.36092 1.38667 8.70044 2.07467L8.02204 2.78135L7.34364 2.07467C5.96892 0.642666 3.73916 0.642666 2.36444 2.07467C0.989725 3.50667 0.989725 5.82935 2.36444 7.26135L3.04284 7.96802L8.02204 13.1547L13.0012 7.96802L13.6796 7.26135C14.3401 6.57335 14.7113 5.64068 14.7113 4.66801C14.7113 3.69534 14.3401 2.76267 13.6796 2.07467Z"
+					stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+			<span class="schools-item__label">Like</span>
+			<span class="schools-item__like-num">4</span>
+		</button>
+	</div>
+
+</li>
+			</ul>
+
+			<div class="pagination">
+				<nav class="pagination__nav">
+					<ul class="pagination__list">
+						<li>
+							<a href="#">
+								<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.75439 0.947388L2.33324 6.08322L7.75439 11.219" stroke-width="2" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a class="active" href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">5</a>
+						</li>
+						<li class="pagination__dots">
+							<a href="#">...</a>
+						</li>
+						<li>
+							<a href="#">24</a>
+						</li>
+						<li>
+							<a href="#">25</a>
+						</li>
+						<li>
+							<a href="#">26</a>
+						</li>
+						<li>
+							<a class="active" href="#">
+								<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.24561 0.947388L6.66676 6.08322L1.24561 11.219" stroke="white" stroke-width="2" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+	</main>
+	<footer class="footer">
+	<div class="container">
+		<div class="footer__nav">
+
+			<ul class="menu">
+				<li class="menu__item">
+					<a href="#">Privacy</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Terms of use</a>
+				</li>
+				<li class="menu__item">
+					<a href="#">Feedback</a>
+				</li>
+			</ul>
+
+			<span class="footer__copy">
+				© oizglitiba 2021
+			</span>
+
+			<div class="footer__label --svg__brand-icon">
+				Izstrādāts
+			</div>
+
+		</div>
+	</div>
+</footer>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -158,6 +158,14 @@ body {
     @include container(1362px, 1rem);
 }
 
+.format {
+    padding-top: 70px;
+
+    @include _768 {
+        padding-top: 16px;
+    }
+}
+
 .title {
     margin-bottom: 55px;
     color: black;
