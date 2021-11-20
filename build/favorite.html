@@ -30,7 +30,7 @@
 	<header class="header">
 	<div class="container">
 		<nav class="header__nav">
-			<a class="logo" href="#">
+			<a class="logo" href="/">
 				<img src="img/logo.svg" alt="logo">
 			</a>
 
@@ -117,7 +117,7 @@
 
 			<h1 class="title favorite__title">Favourite</h1>
 
-			<div class="favorite__content">
+			<div class="favorite__listing">
 				<form class="favorite__filter" action="#">
 					<select class="favorite__filter-select select" name="sort" id="sort">
 						<option value="en">By popularity</option>
@@ -126,117 +126,823 @@
 					</select>
 				</form>
 
-				<div class="favorite__listing">
+				<ul class="favorite__category">
+					<li class="favorite__item">All</li>
+					<li class="favorite__item active">Instruments</li>
+					<li class="favorite__item">Materials</li>
+				</ul>
 
-					<ul class="favorite__category">
-						<li class="favorite__item">All</li>
-						<li class="favorite__item active">Instruments</li>
-						<li class="favorite__item">Materials</li>
-					</ul>
+				<div class="favorite__items">
 
-					<div class="favorite__items">
+					<ul class="favorite__list">
+						<li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
 
-						<ul class="favorite__list">
-							<li class="instrument instrument--catalog">
 	<img class="instrument__img" src="img/instrument-1.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-2.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-3.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-4.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-5.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-6.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-7.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-8.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-9.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-10.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-11.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-12.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-13.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-14.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-4.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-5.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-9.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-8.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-13.png" alt="instrument">
 </li><li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
 	<img class="instrument__img" src="img/instrument-2.png" alt="instrument">
 </li>
-						</ul>
+					</ul>
 
-						<div class="pagination">
-							<nav class="pagination__nav">
-								<ul class="pagination__list">
-									<li>
-										<a href="#">
-											<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M7.75439 0.947388L2.33324 6.08322L7.75439 11.219" stroke-width="2" />
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a href="#">1</a>
-									</li>
-									<li>
-										<a href="#">2</a>
-									</li>
-									<li>
-										<a class="active" href="#">3</a>
-									</li>
-									<li>
-										<a href="#">4</a>
-									</li>
-									<li>
-										<a href="#">5</a>
-									</li>
-									<li class="pagination__dots">
-										<a href="#">...</a>
-									</li>
-									<li>
-										<a href="#">24</a>
-									</li>
-									<li>
-										<a href="#">25</a>
-									</li>
-									<li>
-										<a href="#">26</a>
-									</li>
-									<li>
-										<a class="active" href="#">
-											<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M1.24561 0.947388L6.66676 6.08322L1.24561 11.219" stroke="white" stroke-width="2" />
-											</svg>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
+					<div class="pagination">
+						<nav class="pagination__nav">
+							<ul class="pagination__list">
+								<li>
+									<a href="#">
+										<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M7.75439 0.947388L2.33324 6.08322L7.75439 11.219" stroke-width="2" />
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">1</a>
+								</li>
+								<li>
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a class="active" href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li class="pagination__dots">
+									<a href="#">...</a>
+								</li>
+								<li>
+									<a href="#">24</a>
+								</li>
+								<li>
+									<a href="#">25</a>
+								</li>
+								<li>
+									<a href="#">26</a>
+								</li>
+								<li>
+									<a class="active" href="#">
+										<svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.24561 0.947388L6.66676 6.08322L1.24561 11.219" stroke="white" stroke-width="2" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
 				</div>
-
 			</div>
+
+
 
 		</div>
 	</div>
 </section>
 	</main>
-	<footer class="footer">
+	<div id="sign-in" class="popup ">
+	<div class="popup__body ">
+		<div class="popup__content ">
+			<a href="#" class="popup__close close-popup form-close">
+				<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g opacity="0.5">
+						<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+					</g>
+				</svg>
+			</a>
+			<div class="popup__info">
+				<form class="popup__form" action="#">
+					<div class="popup__form-title">Sign in</div>
+
+					<ul class="popup__form-list">
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="email">Email</label>
+							<input class="popup__form-input" id="email" type="email" placeholder="alexander1999@gmail.com">
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="pass">Password</label>
+							<input class="popup__form-input" id="pass" type="password" placeholder="Password">
+						</li>
+					</ul>
+
+					<a class="popup__form-forgot" href="#">Forget password?</a>
+
+					<button class="popup__form-submit button" type="submit">Sign in</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="registration" class="popup ">
+	<div class="popup__body ">
+		<div class="popup__content ">
+			<a href="#" class="popup__close close-popup form-close">
+				<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g opacity="0.5">
+						<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+					</g>
+				</svg>
+			</a>
+			<div class="popup__info">
+				<form class="popup__form" action="#">
+					<div class="popup__form-title">Registration</div>
+
+					<ul class="popup__form-list">
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="name">Name</label>
+							<input class="popup__form-input" id="name" type="text" placeholder="alexander" required>
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="email-2">Email</label>
+							<input class="popup__form-input" id="email-2" type="email" placeholder="alexander1999@gmail.com" required>
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="pass-2">Password</label>
+							<input class="popup__form-input" id="pass-2" type="password" placeholder="Password" required>
+						</li>
+					</ul>
+
+					<ul class="popup__form-checkers">
+						<li class="popup__form-check">
+							<label class="popup__form-one">
+								<input class="popup__form-hide sr-only" type="checkbox" required>
+								<div class="checkbox"></div>
+								<div class="popup__form-descr">
+									<span class="popup__form-header">Privacy policy</span>
+								</div>
+							</label>
+						</li>
+						<li class="popup__form-check">
+							<label class="popup__form-one">
+								<input class="popup__form-hide sr-only" type="checkbox" required>
+								<div class="checkbox"></div>
+								<div class="popup__form-descr">
+									<span class="popup__form-header">Subscription acess</span>
+								</div>
+							</label>
+						</li>
+					</ul>
+
+					<div class="popup__form-box">
+						<button class="popup__form-submit popup__form-submit--registration button" type="submit">
+							Create account
+						</button>
+
+						<a class="popup__form-link" href="#">Sign in</a>
+
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="suggest" class="popup ">
+	<div class="popup__body ">
+		<div class="popup__content ">
+			<a href="#" class="popup__close close-popup form-close">
+				<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g opacity="0.5">
+						<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+					</g>
+				</svg>
+			</a>
+			<div class="popup__info">
+				<form class="popup__form" action="#">
+					<div class="popup__form-title">Suggest</div>
+
+					<ul class="popup__form-list">
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="name-2">Name</label>
+							<input class="popup__form-input" id="name-2" type="text" placeholder="alexander" required>
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="website">Website</label>
+							<input class="popup__form-input" id="website" type="email" placeholder="asdjasdlalsd.com" required>
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="description">Description</label>
+							<textarea class="popup__form-textarea" id="description" type="password" placeholder="About this school"
+								required></textarea>
+						</li>
+					</ul>
+
+					<button class="popup__form-submit popup__form-submit--suggest button" type="submit">Suggest</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="feedback" class="popup ">
+	<div class="popup__body ">
+		<div class="popup__content ">
+			<a href="#" class="popup__close close-popup form-close">
+				<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g opacity="0.5">
+						<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+					</g>
+				</svg>
+			</a>
+			<div class="popup__info">
+				<form class="popup__form" action="#">
+					<div class="popup__form-title">Feedback</div>
+
+					<ul class="popup__form-list">
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="name-3">Name</label>
+							<input class="popup__form-input" id="name-3" type="text" placeholder="alexander" required>
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="mail-2">E-mail</label>
+							<input class="popup__form-input" id="mail-2" type="email" placeholder="asdjasdlalsd.com" required>
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="desc">Description</label>
+							<textarea class="popup__form-textarea" id="desc" type="password" placeholder="Your text here"
+								required></textarea>
+						</li>
+					</ul>
+
+					<button class="popup__form-submit popup__form-submit--suggest button" type="submit">Sent</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="schools-form" class="popup popup--big">
+	<div class="popup__body ">
+		<div class="popup__content ">
+			<a href="#" class="popup__close close-popup form-close">
+				<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g opacity="0.5">
+						<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+					</g>
+				</svg>
+			</a>
+			<div class="popup__info">
+				<form class="popup__form" action="#">
+					<div class="popup__form-title">Goda dēlis</div>
+
+					<span class="popup__form-subtitle">Digitālais Latvijas skolu Goda dēlis</span>
+
+					<p class="popup__form-text">
+						Vēlamies sabiedrībai pastāstīt par Latvijas skolu attālinātā mācību procesa veiksmes stāstiem un
+						pārvarētajiem
+						izaicinājumiem. Par to, kā skolas un to skolotāji atraduši radošus veidus kā izglītot skolēnus, kas ir viņu
+						lielākie
+						sasniegumi un kas pietrūcis šajā procesā.
+					</p>
+					<p class="popup__form-text">
+						Lūdzam atbildēt uz dažiem jautājumiem un dalīties ar pieredzi, lai iedrošinātu citus apgūt ko jaunu un
+						sniegt
+						kvalitatīvu izglītību! :)
+					</p>
+
+					<ul class="popup__form-list">
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="answer-1">
+								Jūsu vārds un uzvārds <span>*</span>
+							</label>
+							<input class="popup__form-input" id="answer-1" type="text" placeholder="my answer" required>
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="answer-2">
+								Skola, kurā strādājat <span>*</span>
+							</label>
+							<input class="popup__form-input" id="answer-2" type="text" placeholder="my answer" required>
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="answer-3">
+								Kas ir bijis lielākais attālināto mācību izaicinājums? <span>*</span>
+							</label>
+							<input class="popup__form-input" id="answer-3" type="text" placeholder="my answer" required>
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="answer-4">
+								Ko uzskatāt par Jūsu skolas/skolotāju lielāko sasniegumu attālināto mācību laikā? <span>*</span>
+							</label>
+							<input class="popup__form-input" id="answer-4" type="text" placeholder="my answer" required>
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="answer-5">
+								Ko no šī laika “paņemsiet līdzi” atgriežoties ierastajā režīmā?
+							</label>
+							<input class="popup__form-input" id="answer-5" type="text" placeholder="my answer">
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="answer-6">
+								Kas Jums palīdzētu attālināto mācību procesu padarīt efektīvāku?
+							</label>
+							<input class="popup__form-input" id="answer-6" type="text" placeholder="my answer">
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="answer-7">
+								Iedrošinājums/aicinājums citiem izglītībā strādājošajiem šajā laikā! <span>*</span>
+							</label>
+							<input class="popup__form-input" id="answer-7" type="text" placeholder="my answer" required>
+						</li>
+						<li class="popup__form-item">
+							<p class="popup__form-text">
+								Ja vēlaties, varat nosūtīt foto vai ekrānšāviņu, kas raksturo Jūsu ikdienu attālinātajās mācībās, Jūsu
+								mācību procesu
+								vai panākumus šajā laikā, uz e-pastu - info@oizglitiba.lv norādot savu vārdu un uzvārdu.
+							</p>
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="answer-8">
+								Varat izmantot arī kādu citu veidu, kā nosūtīt foto - augšupielādēt <a href="failiem.lv">failiem.lv</a>
+								vai caur Google Drive, ja foto fails ir
+								pārāk liels un pievienot linku šeit :)
+							</label>
+							<input class="popup__form-input" id="answer-8" type="text" placeholder="my answer" required>
+						</li>
+						<li class="popup__form-item">
+							<label class="popup__form-label" for="answer-8">
+								Jūsu epasts/kontaktinformācija
+							</label>
+							<input class="popup__form-input" id="answer-8" type="text" placeholder="my answer" required>
+						</li>
+					</ul>
+
+					<div class="popup__form-box">
+						<button class="popup__form-submit popup__form-submit--schools button" type="submit">Sent</button>
+
+						<button class="popup__form-link" type="reset">
+							Clean the form
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
 	<div class="container">
 		<div class="footer__nav">
 

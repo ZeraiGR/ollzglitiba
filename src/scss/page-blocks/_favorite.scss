@@ -1,20 +1,66 @@
 .favorite__title {
     margin-bottom: 2.5rem;
+
+    @include _768 {
+        margin-bottom: 24px;
+    }
 }
 
 .favorite__filter {
     margin-bottom: 2.5rem;
     text-align: right;
+    width: 100%;
+
+    @include _768 {
+        margin-bottom: 40px;
+    }
+
+    @include _630 {
+        order: 2;
+        text-align: left;
+    }
 }
 
 .favorite__filter-select {
     @extend %montserrat-500;
     font-size: 1rem;
+
+    @include _768 {
+        font-size: 16px;
+    }
 }
 
 .favorite__listing {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include _630 {
+        flex-direction: column;
+    }
+}
+
+.favorite__category {
+    @include _630 {
+        position: relative;
+        margin-bottom: 40px;
+        padding-bottom: 16px;
+        display: flex;
+        max-width: max-content;
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #f0f0f0;
+            content: '';
+        }
+    }
+
+    @include _414 {
+        max-width: 100%;
+    }
 }
 
 .favorite__items {
@@ -25,7 +71,11 @@
     }
 
     @include _768 {
-        padding-bottom: 3rem;
+        padding-bottom: 48px;
+    }
+
+    @include _630 {
+        order: 3;
     }
 }
 
@@ -35,6 +85,20 @@
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 1.5rem;
     grid-column-gap: 2rem;
+
+    @include _1024 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include _768 {
+        padding-bottom: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 32px;
+    }
+
+    @include _630 {
+        grid-template-columns: 1fr;
+    }
 }
 
 .favorite__list .instrument--catalog {
@@ -65,10 +129,43 @@
     &.active {
         &::before {
             display: block;
+
+            @include _630 {
+                display: none;
+            }
         }
+
+        @include _630 {
+            &::after {
+                position: absolute;
+                z-index: 2;
+                left: 0;
+                bottom: -16px;
+                width: 100%;
+                height: 2px;
+                background-color: $accent;
+                content: '';
+            }
+        }
+    }
+
+    @include _630 {
+        padding-left: 0;
+
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+    }
+
+    @include _630 {
+        font-size: 16px;
     }
 }
 
 .favorite__item:not(:last-child) {
     margin-bottom: 1rem;
+
+    @include _630 {
+        margin-bottom: 0;
+    }
 }

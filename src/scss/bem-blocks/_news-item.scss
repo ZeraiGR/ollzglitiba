@@ -54,7 +54,13 @@
 .schools-item__title {
     margin-bottom: 0.5rem;
     display: block;
+    font-size: 1rem;
     @extend %montserrat-600;
+
+    @include _768 {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
 }
 
 .news-item__date {
@@ -62,6 +68,11 @@
     display: block;
     font-size: 0.75rem;
     color: #808080;
+
+    @include _768 {
+        margin-bottom: 16px;
+        font-size: 12px;
+    }
 }
 
 .news-item__preview,
@@ -70,67 +81,11 @@
     color: black;
     display: none;
 
+    @include _768 {
+        font-size: 16px;
+    }
+
     @include _630 {
         display: block;
     }
-}
-
-.news-item__feedback,
-.schools-item__feedback {
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    font-size: 0.75rem;
-}
-
-.news-item__like,
-.schools-item__like {
-    margin-right: 1rem;
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    border: 1px solid #cccccc;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.news-item__like-icon,
-.schools-item__like-icon {
-    margin-right: 0.5rem;
-    fill: transparent;
-}
-
-.news-item__label,
-.schools-item__label,
-.news-item__like-num,
-.schools-item__like-num,
-.news-item__comment-num {
-    line-height: 1;
-}
-
-.news-item__like-num,
-.schools-item__like-num {
-    color: #808080;
-}
-
-.news-item__label,
-.schools-item__label {
-    margin-right: 0.5rem;
-    @extend %montserrat-500;
-}
-
-.news-item__comment {
-    display: flex;
-    align-items: center;
-}
-
-.news-item__comment-icon {
-    margin-right: 0.25rem;
-    width: 0.94rem;
-    height: 0.94rem;
-}
-
-.news-item__comment-num {
-    color: black;
 }

@@ -1,0 +1,98 @@
+.feedback {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+
+    @include _768 {
+        font-size: 12px;
+    }
+}
+
+.feedback__like {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+        .feedback__like-icon {
+            fill: #ef4545;
+        }
+
+        .feedback__like-icon path {
+            stroke: #ef4545;
+        }
+    }
+
+    @include _768 {
+        margin-right: 16px;
+        padding: 9px;
+    }
+}
+
+.feedback__like-icon {
+    margin-right: 0.5rem;
+    fill: transparent;
+    transition: fill 0.3s;
+
+    @include _768 {
+        margin-right: 9px;
+    }
+}
+
+.feedback__label,
+.feedback__like-num,
+.feedback__comment-num {
+    line-height: 1;
+}
+
+.feedback__like-num {
+    color: #808080;
+}
+
+.feedback__label {
+    margin-right: 0.5rem;
+    @extend %montserrat-500;
+
+    @include _768 {
+        margin-right: 8px;
+    }
+}
+
+.feedback__comment {
+    display: flex;
+    align-items: center;
+}
+
+.feedback__comment-icon {
+    margin-right: 0.25rem;
+    width: 0.94rem;
+    height: 0.94rem;
+
+    @include _768 {
+        margin-right: 6px;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.feedback__comment-num {
+    color: black;
+}
+
+.feedback__reply {
+    padding: 0;
+    font-size: 0.875rem;
+    color: $accent;
+    background-color: transparent;
+    cursor: pointer;
+
+    @include _768 {
+        font-size: 14px;
+    }
+}

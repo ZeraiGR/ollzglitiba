@@ -1,7 +1,8 @@
 .instrument {
     position: relative;
-    width: 200px;
-    height: 200px;
+    padding: 1rem;
+    width: 12.5rem;
+    height: 12.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,47 +19,38 @@
     }
 
     &--catalog {
-        margin-bottom: 24px;
-        margin-right: 32px;
-        width: 240px;
-        height: 240px;
-        &:nth-child(4n) {
-            margin-right: 0;
-            @include _1366 {
-                margin-right: 24px;
-            }
+        width: 15rem;
+        height: 15rem;
 
-            @include _768 {
-                margin-right: 0;
+        .catalog__list &:hover {
+            .instrument__add-icon {
+                opacity: 1;
+                visibility: visible;
+                transition: opacity 0.3s;
             }
         }
 
-        &:nth-last-child(- n + 4) {
-            margin-bottom: 0;
-            @include _1366 {
-                margin-bottom: 24px;
+        &.liked {
+            .instrument__icon {
+                display: block;
             }
         }
 
-        @include _1366 {
-            &:nth-last-child(- n + 2) {
-                margin-bottom: 0;
-                @include _630 {
-                    margin-bottom: 24px;
-                }
+        .catalog__list &.choosen {
+            .instrument__choosen-icon {
+                display: block;
             }
         }
 
-        @include _630 {
-            &:nth-last-child(- n + 1) {
-                margin-bottom: 0;
-            }
+        @include _768 {
+            width: 240px;
+            height: 240px;
         }
     }
 
-    @include _1366 {
-        margin-bottom: 24px;
-        margin-right: 24px;
+    @include _768 {
+        width: 200px;
+        height: 200px;
     }
 
     @include _414 {
@@ -73,14 +65,23 @@
     }
 }
 
-.catalog__list .instrument {
-    @include _414 {
-        margin-bottom: 32px;
+.instrument__icon,
+.instrument__add-icon,
+.instrument__choosen-icon {
+    position: absolute;
+    top: 1.125rem;
+    left: 1.125rem;
+}
 
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
+.instrument__icon,
+.instrument__choosen-icon {
+    display: none;
+}
+
+.instrument__add-icon {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
 }
 
 .instrument__open {

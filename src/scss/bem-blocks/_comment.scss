@@ -1,0 +1,70 @@
+.comment {
+    display: flex;
+    .avatar {
+        margin-right: 1.5rem;
+
+        @include _768 {
+            margin-right: 16px;
+        }
+    }
+    .comment {
+        margin-top: 1.5rem;
+
+        @include _768 {
+            margin-top: 40px;
+
+            .comment__date {
+                display: block;
+                margin-top: 4px;
+            }
+        }
+    }
+}
+
+.comment__content {
+    padding-top: 0.875rem;
+
+    @include _768 {
+        padding-top: 8px;
+    }
+}
+
+.comment__top {
+    margin-bottom: 0.875rem;
+
+    @include _768 {
+        margin-bottom: 8px;
+    }
+}
+
+.comment__author {
+    margin-right: 1rem;
+    @extend %montserrat-500;
+    color: #000000;
+
+    @include _768 {
+        margin-right: 16px;
+        font-size: 16px;
+    }
+}
+
+.comment__date {
+    color: #808080;
+    font-size: 0.75rem;
+
+    @include _768 {
+        font-size: 12px;
+    }
+}
+
+.comment__text {
+    margin-bottom: 1rem;
+    color: #000000;
+    line-height: 1.5;
+
+    @include _768 {
+        margin-bottom: 16px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}

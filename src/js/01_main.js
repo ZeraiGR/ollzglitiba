@@ -251,12 +251,25 @@ window.addEventListener('DOMContentLoaded', function loaded() {
         }
     }
 
+    function catalogCardHandler() {
+        const catalogCards = document.querySelectorAll('.instrument--catalog');
+
+        if (catalogCards) {
+            catalogCards.forEach((el) => {
+                el.addEventListener('click', function () {
+                    this.classList.toggle('choosen');
+                });
+            });
+        }
+    }
+
     popupLogic();
     sidebarToggle();
     menuBurgerHandler();
     searchBtnHandler();
     loginHandler();
     favoriteTabsHandler();
+    catalogCardHandler();
 });
 
 // https://jsfiddle.net/95tnmdyr/

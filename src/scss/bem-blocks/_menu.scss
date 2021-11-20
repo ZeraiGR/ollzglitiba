@@ -10,7 +10,7 @@
 }
 
 .menu li {
-    margin-right: 40px;
+    margin-right: 2.5rem;
 }
 
 .header .menu li {
@@ -29,9 +29,9 @@
 }
 
 .menu a {
-    padding: 8px 4px;
+    padding: 0.5rem 0.25rem;
     color: black;
-    font-size: 14px;
+    font-size: 0.875rem;
     @extend %montserrat-500;
     border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;

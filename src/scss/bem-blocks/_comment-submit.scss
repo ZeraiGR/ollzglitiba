@@ -1,0 +1,37 @@
+.comment-submit {
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+
+    .avatar {
+        margin-right: 1.5rem;
+
+        @include _768 {
+            margin-right: 8px;
+        }
+    }
+
+    @include _768 {
+        margin-bottom: 40px;
+    }
+}
+
+.comment-submit__input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+
+    &::placeholder {
+        font-size: 0.875rem;
+
+        @include _768 {
+            font-size: 14px;
+        }
+    }
+
+    @include _768 {
+        padding: 12px;
+        height: 48px;
+    }
+}

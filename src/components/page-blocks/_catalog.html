@@ -19,7 +19,7 @@
 						<ul class="catalog__search-list">
 							<li class="catalog__search-item">
 								<label class="catalog__search-label">
-									<input class="catalog__search-input sr-only" type="checkbox">
+									<input class="catalog__search-input sr-only" name="category" type="radio">
 									<div class="checkbox"></div>
 
 									<div class="catalog__search-descr">
@@ -41,19 +41,19 @@
 
 							<li class="catalog__search-item">
 								<label class="catalog__search-label">
-									<input class="catalog__search-input sr-only" type="checkbox">
+									<input class="catalog__search-input sr-only" name="category" type="radio">
 									<div class="checkbox"></div>
 									<div class="catalog__search-descr">
 
 										<span class="catalog__search-header">Plugins</span>
 
 										<span class="tooltip">
-											<button class="tooltip__btn" aria-describedby="some_id">
+											<button class="tooltip__btn" aria-describedby="some_id-1">
 												<svg class="catalog__search-icon">
 													<use xlink:href="img/sprite.svg#sprite--info"></use>
 												</svg>
 											</button>
-											<span class="tooltip__txt" role="tooltip" id="some_id">
+											<span class="tooltip__txt" role="tooltip" id="some_id-2">
 												<span class="sr-only">Тултип: </span>
 												Some toolasdtiaasdp
 											</span>
@@ -64,7 +64,7 @@
 
 							<li class="catalog__search-item">
 								<label class="catalog__search-label">
-									<input class="catalog__search-input sr-only" type="checkbox">
+									<input class="catalog__search-input sr-only" name="category" type="radio">
 									<div class="checkbox"></div>
 									<div class="catalog__search-descr">
 										<span class="catalog__search-header">All</span>
@@ -77,7 +77,7 @@
 				</form>
 
 				<div class="catalog__suggest popup-link" href="#">
-					<a class="catalog__link" href="#">
+					<a class="catalog__link popup-link" href="#suggest">
 						Suggest instruments
 					</a>
 				</div>

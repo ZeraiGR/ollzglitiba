@@ -1,5 +1,5 @@
 .sidebar {
-    margin-right: 32px;
+    margin-right: 2rem;
     max-width: 240px;
     width: 100%;
 
@@ -10,16 +10,20 @@
         left: 0;
         max-width: 100%;
         background-color: #ffffff;
+        transform: translateY(100%);
         opacity: 0;
         visibility: hidden;
+        transition: transform 0.5s, opacity 0.2s;
     }
 
     &.open {
         opacity: 1;
+        transform: translateY(0);
         visibility: visible;
         overflow: auto;
         height: 100vh;
         padding: 24px 16px;
+        transition: transform 0.5s, opacity 0.2s;
 
         .sidebar-single__show {
             width: 100%;
@@ -61,23 +65,35 @@
 }
 
 .sidebar__title {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     @extend %montserrat-600;
+
+    @include _768 {
+        margin-bottom: 24px;
+    }
 }
 
 .sidebar__title-search {
     display: none;
     @extend %montserrat-700;
-    font-size: 24px;
+    font-size: 1.5rem;
+
+    @include _768 {
+        font-size: 24px;
+    }
 }
 
 .sidebar-single__show {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
     width: 240px;
     @extend %montserrat-500;
     cursor: pointer;
+
+    @include _768 {
+        margin-bottom: 16px;
+    }
 }
 
 .sidebar-single__list {
@@ -137,5 +153,9 @@
 
 .sidebar__show-results {
     display: none;
-    padding: 12px 10px;
+    padding: 0.75rem 0.625rem;
+
+    @include _768 {
+        padding: 12px 10px;
+    }
 }

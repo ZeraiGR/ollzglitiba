@@ -1,15 +1,18 @@
 .select {
-    padding-right: 14px;
-    padding-left: 5px;
-    font-size: 14px;
+    padding-right: 0.875rem;
+    padding-left: 0.313rem;
+    font-size: 0.875rem;
     background-image: url('../img/select-arrow.svg');
     background-repeat: no-repeat;
     background-position: right center;
+    background-color: transparent;
     appearance: none;
     border: none;
     outline: transparent;
 
-    @include _979 {
-        font-size: 13px;
+    @include _768 {
+        padding-right: 14px;
+        padding-left: 5px;
+        font-size: 14px;
     }
 }

@@ -1,26 +1,23 @@
-.steps {
-}
-
 .steps__guides {
-    padding: 40px;
-    border-radius: 40px;
+    padding: 2.5rem;
+    border-radius: 2.5rem;
     border: 1px solid rgba(54, 97, 246, 0.2);
 }
 
 .steps__list {
-    margin-right: 20px;
-    padding: 30px 0;
+    margin-right: 1.25rem;
+    padding: 1.875rem 0;
 }
 
 .steps__item {
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .steps__item:nth-child(2) {
-    margin-bottom: 75px;
+    margin-bottom: 4.688rem;
 }
 
 .steps__item:last-child {
@@ -29,33 +26,33 @@
 
 .steps__num {
     @extend %montserrat-700;
-    font-size: 72px;
+    font-size: 4.5rem;
     color: #a6ca59;
     line-height: 1.2;
 }
 
 .steps__name {
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
     @extend %montserrat-600;
     color: $accent;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .steps__descr {
     text-align: center;
-    max-width: 170px;
+    max-width: 10.625rem;
 }
 
 .steps__images {
-    padding: 40px;
+    padding: 2.5rem;
     border: 1px solid rgba(54, 97, 246, 0.2);
-    border-radius: 40px;
+    border-radius: 2.5rem;
 }
 
 .steps__image-item {
     display: block;
-    margin-bottom: 40px;
-    max-width: 417px;
+    margin-bottom: 2.5rem;
+    max-width: 26.063rem;
 }
 
 .steps__image-item:last-child {

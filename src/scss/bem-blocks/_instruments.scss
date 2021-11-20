@@ -5,7 +5,7 @@
 }
 
 .instruments__inner {
-    padding: 70px 0 114px;
+    padding: 4.375rem 0 7.125rem;
     border-top: 1px solid #cccccc;
 
     @include _768 {
@@ -15,7 +15,7 @@
 }
 
 .instruments__title {
-    margin-bottom: 55px;
+    margin-bottom: 3.438rem;
 }
 
 .instruments__list {
@@ -24,10 +24,31 @@
 
     @include _1366 {
         flex-wrap: wrap;
-        justify-content: flex-start;
+    }
+
+    @include _979 {
+        justify-content: start;
     }
 
     @include _414 {
         justify-content: center;
+    }
+
+    & .instrument {
+        margin-right: 1.5rem;
+
+        @include _1366 {
+            margin-bottom: 1.5em;
+        }
+
+        @include _768 {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @include _414 {
+            margin-right: 0;
+        }
     }
 }

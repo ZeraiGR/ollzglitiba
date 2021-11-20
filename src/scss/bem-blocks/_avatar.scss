@@ -1,0 +1,19 @@
+.avatar {
+    min-width: 3rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a6ca59;
+    color: #ffffff;
+    @extend %montserrat-500;
+    border-radius: 50%;
+
+    @include _768 {
+        margin-right: 16px;
+        min-width: 32px;
+        width: 32px;
+        height: 32px;
+    }
+}

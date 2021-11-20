@@ -1,5 +1,6 @@
-.login__link {
-    padding: 12px 40px;
+.login__link,
+.register__link {
+    padding: 0.75rem 2.5rem;
     @extend %montserrat-500;
 
     @include _979 {
@@ -8,7 +9,8 @@
     }
 }
 
-.login .login__link {
+.login .login__link,
+.register .register__link {
     @include _768 {
         margin-bottom: 24px;
         padding: 0;

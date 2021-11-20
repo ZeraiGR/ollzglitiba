@@ -1,12 +1,8 @@
 .header__nav {
-    padding: 33px 0 9px;
+    padding: 2.063rem 0 0.563rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    @include _979 {
-        padding: 25px 0 9px;
-    }
 
     @include _768 {
         padding: 18px 0;
@@ -19,7 +15,7 @@
 
     @include _768 {
         position: absolute;
-        z-index: 2;
+        z-index: 3;
         top: 88px;
         padding: 24px;
         width: calc(100% - 32px);
@@ -44,13 +40,10 @@
 }
 
 .header__menu {
-    margin-right: 40px;
-
-    @include _979 {
-        margin-right: 25px;
-    }
+    margin-right: 2.5rem;
 
     @include _768 {
+        margin-right: 0;
         order: 2;
         flex-direction: column;
         align-items: start;
@@ -58,13 +51,10 @@
 }
 
 .header__language {
-    margin-right: 40px;
-
-    @include _979 {
-        margin-right: 25px;
-    }
+    margin-right: 2.5rem;
 
     @include _768 {
+        margin-right: 0;
         order: 3;
         padding-top: 24px;
     }
@@ -77,7 +67,7 @@
 
     @include _768 {
         position: relative;
-        z-index: 6;
+        z-index: 2;
         display: block;
         width: 18px;
         height: 14px;

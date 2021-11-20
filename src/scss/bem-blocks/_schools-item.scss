@@ -37,8 +37,18 @@
 }
 
 .schools-item__img {
+    @include _768 {
+        margin-bottom: 16px;
+    }
+
     @include _414 {
         height: 120px;
+    }
+}
+
+.schools-item__title {
+    @include _768 {
+        margin-bottom: 16px;
     }
 }
 

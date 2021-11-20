@@ -4,17 +4,21 @@
 }
 
 .pagination__list li {
-    margin-right: 8px;
-    width: 32px;
-    height: 32px;
+    margin-right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.875rem;
+
     @extend %montserrat-500;
 
     @include _768 {
         margin-right: 4px;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
 
         &:nth-child(5) {
             display: none;
@@ -41,11 +45,19 @@
 }
 
 .pagination__list li:first-child {
-    margin-right: 24px;
+    margin-right: 1.5rem;
+
+    @include _768 {
+        margin-right: 24px;
+    }
 }
 
 .pagination__list li:nth-last-child(2) {
-    margin-right: 24px;
+    margin-right: 1.5rem;
+
+    @include _768 {
+        margin-right: 24px;
+    }
 }
 
 .pagination__list li svg path {
@@ -82,7 +94,7 @@
 
 .pagination .pagination__dots {
     position: relative;
-    margin: 0 17px;
+    margin: 0 1.063rem;
 
     @include _768 {
         margin-right: 4px;
@@ -102,11 +114,11 @@
     }
 
     &::before {
-        left: -9px;
+        left: -0.563rem;
     }
 
     &::after {
-        right: -9px;
+        right: -0.563rem;
     }
 }
 

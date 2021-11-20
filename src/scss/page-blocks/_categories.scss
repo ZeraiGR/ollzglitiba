@@ -5,7 +5,7 @@
 }
 
 .categories__inner {
-    padding: 70px 0 75px;
+    padding: 4.375rem 0 4.688rem;
     border-top: 1px solid #cccccc;
 
     @include _768 {
@@ -23,12 +23,12 @@
 }
 
 .categories__list {
-    margin-right: 32px;
-    max-width: 240px;
+    margin-right: 2rem;
+    max-width: 15rem;
     width: 100%;
 
     @include _979 {
-        margin-bottom: 12px;
+        margin-bottom: 0.75rem;
     }
 
     @include _768 {

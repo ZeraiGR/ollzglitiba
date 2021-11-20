@@ -14,10 +14,10 @@
     left: 55%;
     top: 0;
     z-index: 3;
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
     width: max-content;
-    max-width: 370px;
-    font-size: 14px;
+    max-width: 23.125rem;
+    font-size: 0.875rem;
     line-height: 200%;
     color: #fff;
     background: $text;
@@ -37,6 +37,12 @@
         border-right: 6px solid transparent;
         border-top: 6px solid #505050;
         content: '';
+    }
+
+    @include _768 {
+        padding: 16px 24px;
+        max-width: 370px;
+        font-size: 14px;
     }
 }
 

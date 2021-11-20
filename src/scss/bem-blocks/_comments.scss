@@ -1,0 +1,18 @@
+.comments {
+    padding-top: 2.5rem;
+    border-top: 1px solid #cccccc;
+
+    @include _768 {
+        margin: 0 -16px;
+        padding: 0 16px;
+        padding-top: 40px;
+    }
+}
+
+.comments > .comment:not(:last-child) {
+    margin-bottom: 1.5rem;
+
+    @include _768 {
+        margin-bottom: 40px;
+    }
+}

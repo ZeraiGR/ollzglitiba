@@ -1,7 +1,7 @@
 .catalog__title {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     @extend %montserrat-700;
-    font-size: 32px;
+    font-size: 2rem;
 
     @include _768 {
         margin-bottom: 16px;
@@ -10,7 +10,7 @@
 }
 
 .catalog__top {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: start;
     justify-content: space-between;
@@ -57,8 +57,13 @@
 }
 
 .catalog__search-icon {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
+
+    @include _768 {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 .catalog__search-category,
@@ -84,16 +89,20 @@
 
 .catalog__search-label {
     position: relative;
-    margin-right: 24px;
+    margin-right: 1.5rem;
     display: flex;
     align-items: center;
     cursor: pointer;
+
+    @include _768 {
+        margin-right: 24px;
+    }
 }
 
 .catalog__search-enter {
-    margin-right: 16px;
-    padding-left: 38px;
-    height: 48px;
+    margin-right: 1rem;
+    padding-left: 2.375rem;
+    height: 3rem;
     width: 630px;
     background-image: url('../img/zoom.svg');
     background-repeat: no-repeat;
@@ -103,11 +112,19 @@
     font-size: 14px;
 
     @include _1366 {
+        padding-left: 2.75rem;
         width: 400px;
     }
 
     @include _979 {
+        padding-left: 3rem;
         width: auto;
+    }
+
+    @include _768 {
+        margin-right: 16px;
+        padding-left: 38px;
+        height: 48px;
     }
 }
 
@@ -116,24 +133,33 @@
 }
 
 .catalog__search-block {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     display: flex;
-}
 
-.catalog__search-heading {
-    margin-right: 24px;
-
-    @include _979 {
+    @include _768 {
         margin-bottom: 16px;
     }
 }
 
+.catalog__search-heading {
+    margin-right: 1.5rem;
+
+    @include _979 {
+        margin-bottom: 16px;
+    }
+
+    @include _768 {
+        margin-right: 24px;
+    }
+}
+
 .catalog__search-btn {
-    padding: 12px 40px;
+    padding: 0.7rem 2.5rem;
 }
 
 .catalog__search-input:checked + .checkbox,
-.sidebar-single__checkbox:checked + .checkbox {
+.sidebar-single__checkbox:checked + .checkbox,
+.popup__form-hide:checked + .checkbox {
     background-color: $accent;
     border-color: $accent;
 }
@@ -144,57 +170,80 @@
 }
 
 .catalog__search-header {
-    margin-right: 4px;
+    margin-right: 0.25rem;
     color: black;
     @extend %montserrat-500;
     line-height: 1;
 }
 
 .catalog__link {
-    padding: 12px 40px;
+    padding: 0.75rem 2.5rem;
     display: block;
     color: $accent;
     @extend %montserrat-500;
     border: 1px solid $accent;
     border-radius: 8px;
+
+    @include _768 {
+        padding: 12px 40px;
+    }
 }
 
 .catalog__filter {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     text-align: right;
 
     @include _768 {
+        margin-bottom: 40px;
         text-align: left;
     }
 }
 
 .catalog__filter .catalog__filter-select {
     border: none;
-    font-size: 16px;
+    font-size: 1rem;
     @extend %montserrat-500;
+
+    @include _768 {
+        font-size: 16px;
+    }
 }
 
 .catalog__main {
-    padding-bottom: 160px;
+    padding-bottom: 10rem;
     display: flex;
 
     @include _979 {
         padding-bottom: 80px;
     }
+
+    @include _414 {
+        display: block;
+    }
 }
 
 .catalog__list {
-    margin-bottom: 80px;
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 1.5rem;
 
     @include _1366 {
-        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include _979 {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     @include _768 {
-        justify-content: start;
         margin-bottom: 40px;
+        grid-row-gap: 2rem;
+    }
+
+    @include _630 {
+        grid-template-columns: 100%;
     }
 }
 
@@ -212,16 +261,27 @@
     margin-bottom: 24px;
     padding-bottom: 16px;
     border-bottom: 1px solid #ebebeb;
+
+    @include _768 {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+    }
 }
 
 .sidebar-single__item {
-    margin-bottom: 16px;
-    max-width: 160px;
-    font-size: 14px;
+    margin-bottom: 1rem;
+    max-width: 10rem;
+    font-size: 0.875rem;
     @extend %montserrat-500;
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @include _768 {
+        margin-bottom: 16px;
+        max-width: 160px;
+        font-size: 14px;
     }
 }
 

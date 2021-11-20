@@ -1,6 +1,6 @@
 .popup {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -11,6 +11,80 @@
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.8s ease 0s;
+
+    &.instrument__popup {
+        @include _630 {
+            .popup__info {
+                flex-direction: column;
+            }
+
+            .popup__img-box {
+                width: 100%;
+                padding-top: 48px;
+            }
+
+            .popup__card {
+                max-width: 100%;
+                padding: 24px;
+            }
+
+            .popup__card-descr {
+                margin-bottom: 30px;
+            }
+
+            .popup__card-link {
+                text-align: center;
+            }
+        }
+    }
+
+    &--big {
+        .popup__form {
+            width: 70vw;
+
+            @include _768 {
+                width: 90vw;
+            }
+        }
+
+        .popup__form-title {
+            margin-bottom: 3rem;
+
+            @include _768 {
+                margin-bottom: 48px;
+            }
+        }
+
+        .popup__form-subtitle {
+            margin-bottom: 1rem;
+            display: block;
+            font-size: 1.25rem;
+            color: #000000;
+            @extend %montserrat-500;
+
+            @include _768 {
+                margin-bottom: 16px;
+                font-size: 20px;
+            }
+        }
+
+        .popup__form-text {
+            margin-bottom: 1.875rem;
+            color: #000000;
+
+            @include _768 {
+                margin-bottom: 30px;
+            }
+        }
+
+        .popup__form-item {
+            margin-bottom: 2rem;
+
+            @include _768 {
+                margin-bottom: 32px;
+            }
+        }
+    }
 }
 
 .popup.open {
@@ -48,6 +122,11 @@
     top: 22px;
 }
 
+.form-close {
+    top: 2.625rem;
+    right: 2.813rem;
+}
+
 .popup__close-icon {
     width: 20px;
     fill: #9e9e9e;
@@ -66,6 +145,169 @@
 
 .popup__info {
     display: flex;
+}
+
+.popup__form {
+    padding: 2.5rem;
+    width: 25rem;
+}
+
+.popup__form-title {
+    margin-bottom: 2rem;
+    color: #000000;
+    font-size: 1.5rem;
+    @extend %montserrat-600;
+
+    @include _768 {
+        margin-bottom: 32px;
+        font-size: 24px;
+    }
+}
+
+.popup__form-item {
+    margin-bottom: 1rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include _768 {
+        margin-bottom: 16px;
+    }
+}
+
+.popup__form-label {
+    margin-bottom: 0.5rem;
+    display: block;
+    font-size: 1rem;
+    color: #000000;
+    @extend %montserrat-500;
+
+    span {
+        color: #ff0000;
+    }
+
+    @include _768 {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+}
+
+.popup__form-checkers {
+    margin-top: 2rem;
+
+    @include _768 {
+        margin-top: 32px;
+    }
+}
+
+.popup__form-one {
+    display: flex;
+}
+
+.popup__form-check {
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.popup__form-input {
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+
+    &::placeholder {
+        font-size: 1rem;
+        color: #808080;
+
+        @include _768 {
+            font-size: 16px;
+        }
+    }
+
+    @include _768 {
+        height: 40px;
+        padding: 8px 12px;
+    }
+}
+
+.popup__form-textarea {
+    padding: 0.5rem 0.75rem;
+    width: 100% !important;
+    height: 7.5rem;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    resize: none;
+
+    &::placeholder {
+        color: #808080;
+        font-size: 16px;
+    }
+
+    @include _768 {
+        height: 120px;
+        padding: 8px 12px;
+    }
+}
+
+.popup__form-header {
+    color: #000000;
+    font-size: 1rem;
+    @extend %montserrat-500;
+
+    @include _768 {
+        font-size: 16px;
+    }
+}
+
+.popup__form-forgot {
+    margin-top: 12px;
+    display: block;
+    color: $accent;
+    font-size: 0.75rem;
+
+    @include _768 {
+        font-size: 12px;
+    }
+}
+
+.popup__form-box {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup__form-link {
+    color: $accent;
+    font-size: 16px;
+    @extend %montserrat-500;
+    background-color: transparent;
+}
+
+.popup__form-submit {
+    margin-top: 32px;
+    padding: 1rem 3.25rem;
+
+    &--suggest {
+        width: 100%;
+    }
+
+    &--registration {
+        margin-top: 0;
+        padding: 16px 18px;
+    }
+
+    &--schools {
+        margin-top: 0;
+        padding: 16px 60px;
+    }
+
+    @include _768 {
+        padding: 16px 52px;
+    }
 }
 
 .popup__img-box {
