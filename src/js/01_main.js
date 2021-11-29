@@ -256,8 +256,15 @@ window.addEventListener('DOMContentLoaded', function loaded() {
 
         if (catalogCards) {
             catalogCards.forEach((el) => {
-                el.addEventListener('click', function () {
-                    this.classList.toggle('choosen');
+                elNotLiked = el.querySelector('.instrument__add-icon');
+                elLiked = el.querySelector('.instrument__choosen-icon');
+
+                elNotLiked.addEventListener('click', function (e) {
+                    el.classList.add('choosen');
+                });
+
+                elLiked.addEventListener('click', function (e) {
+                    el.classList.remove('choosen');
                 });
             });
         }
@@ -271,6 +278,3 @@ window.addEventListener('DOMContentLoaded', function loaded() {
     favoriteTabsHandler();
     catalogCardHandler();
 });
-
-// https://jsfiddle.net/95tnmdyr/
-// it's solution for the smooth animation
