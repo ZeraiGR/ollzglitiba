@@ -532,48 +532,48 @@
 					</div>
 					<div class="catalog__items">
 						<ul class="catalog__list">
-							<a class="instrument instrument--catalog popup-link" href="instrument-1">
-	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
-		xmlns="http://www.w3.org/2000/svg">
-		<path fill-rule="evenodd" clip-rule="evenodd"
-			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
-			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
-	</svg>
-	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-		xmlns="http://www.w3.org/2000/svg">
-		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
-		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
-		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
-		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
-	</svg>
-	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-		xmlns="http://www.w3.org/2000/svg">
-		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
-		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
-		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
-		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
-	</svg>
+							<!-- <li class="instrument instrument--catalog popup-link" href="instrument-1">
+	
 
 	<img class="instrument__img" src="img/instrument-1.png" alt="instrument">
 
-	<div id="instrument-1" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-1.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-2">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -594,27 +594,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-1.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-1.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-2">
+	
 
 	<img class="instrument__img" src="img/instrument-2.png" alt="instrument">
 
-	<div id="instrument-2" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-2.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-3">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -635,27 +693,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-2.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-2.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-3">
+	
 
 	<img class="instrument__img" src="img/instrument-3.png" alt="instrument">
 
-	<div id="instrument-3" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-3.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-4">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -676,27 +792,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-3.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-3.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-4">
+	
 
 	<img class="instrument__img" src="img/instrument-4.png" alt="instrument">
 
-	<div id="instrument-4" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-4.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-5">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -717,27 +891,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-4.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-4.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-5">
+	
 
 	<img class="instrument__img" src="img/instrument-5.png" alt="instrument">
 
-	<div id="instrument-5" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-5.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-6">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -758,27 +990,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-5.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-5.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-6">
+	
 
 	<img class="instrument__img" src="img/instrument-6.png" alt="instrument">
 
-	<div id="instrument-6" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-6.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-7">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -799,27 +1089,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-6.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-6.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-7">
+	
 
 	<img class="instrument__img" src="img/instrument-7.png" alt="instrument">
 
-	<div id="instrument-7" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-7.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-8">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -840,27 +1188,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-7.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-7.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-8">
+	
 
 	<img class="instrument__img" src="img/instrument-8.png" alt="instrument">
 
-	<div id="instrument-8" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-8.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-9">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -881,27 +1287,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-8.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-8.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-9">
+	
 
 	<img class="instrument__img" src="img/instrument-9.png" alt="instrument">
 
-	<div id="instrument-9" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-9.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-10">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -922,27 +1386,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-9.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-9.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-10">
+	
 
 	<img class="instrument__img" src="img/instrument-10.png" alt="instrument">
 
-	<div id="instrument-10" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-10.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-11">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -963,27 +1485,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-10.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-10.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-11">
+	
 
 	<img class="instrument__img" src="img/instrument-11.png" alt="instrument">
 
-	<div id="instrument-11" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-11.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-12">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -1004,27 +1584,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-11.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-11.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-12">
+	
 
 	<img class="instrument__img" src="img/instrument-12.png" alt="instrument">
 
-	<div id="instrument-12" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-12.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-13">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -1045,27 +1683,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-12.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-12.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-13">
+	
 
 	<img class="instrument__img" src="img/instrument-13.png" alt="instrument">
 
-	<div id="instrument-13" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-13.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-14">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -1086,27 +1782,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-13.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-13.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-14">
+	
 
 	<img class="instrument__img" src="img/instrument-14.png" alt="instrument">
 
-	<div id="instrument-14" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-14.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-15">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -1127,27 +1881,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-14.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-14.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-15">
+	
 
 	<img class="instrument__img" src="img/instrument-4.png" alt="instrument">
 
-	<div id="instrument-15" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-4.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-16">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -1168,27 +1980,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-4.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-4.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-16">
+	
 
 	<img class="instrument__img" src="img/instrument-5.png" alt="instrument">
 
-	<div id="instrument-16" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-5.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-17">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -1209,27 +2079,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-5.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-5.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-17">
+	
 
 	<img class="instrument__img" src="img/instrument-9.png" alt="instrument">
 
-	<div id="instrument-17" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-9.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-18">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -1250,27 +2178,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-9.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-9.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-18">
+	
 
 	<img class="instrument__img" src="img/instrument-8.png" alt="instrument">
 
-	<div id="instrument-18" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-8.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-19">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -1291,27 +2277,85 @@
 		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-8.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-8.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-19">
+	
 
 	<img class="instrument__img" src="img/instrument-13.png" alt="instrument">
 
-	<div id="instrument-19" class="popup ">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-13.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a><a class="instrument instrument--catalog popup-link" href="instrument-20">
+</li> -->
+
+<li class="instrument instrument--catalog">
 	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
 		xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" clip-rule="evenodd"
@@ -1333,26 +2377,142 @@
 		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
 	</svg>
 
-	<img class="instrument__img" src="img/instrument-2.png" alt="instrument">
-
-	<div id="instrument-20" class="popup ">
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-13.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
 		<div class="popup__body ">
 			<div class="popup__content ">
-				<a href="#" class="popup__close close-popup">
-					<svg class="popup__close-icon" xmlns="http://www.w3.org/2000/" svg, viewbox="0 0 352 512">
-						<path
-							d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
-						</path>
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
 					</svg>
 				</a>
-				<div class="popup__title">lorem</div>
-				<div class="popup__info ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat similique
-					repellendus explicabo nihil obcaecati nobis laudantium nisi, accusantium quisquam architecto blanditiis.
-					Minima inventore suscipit sed saepe voluptates fugit facilis nihil?</div>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-13.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</a>
+</li><!-- <li class="instrument instrument--catalog popup-link" href="instrument-20">
+	
+
+	<img class="instrument__img" src="img/instrument-2.png" alt="instrument">
+
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-2.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li> -->
+
+<li class="instrument instrument--catalog">
+	<svg class="instrument__icon" width="22" height="20" viewbox="0 0 22 20" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M19.5194 2.612C18.5286 1.58 17.1856 1 15.785 1C14.3843 1 13.0413 1.58 12.0506 2.612L11.033 3.67203L10.0154 2.612C7.95328 0.464 4.60864 0.464 2.54656 2.612C0.48448 4.76 0.48448 8.24403 2.54656 10.392L3.56416 11.452L11.033 19.232L18.5018 11.452L19.5194 10.392C20.5101 9.36003 21.0669 7.96101 21.0669 6.50201C21.0669 5.04301 20.5101 3.644 19.5194 2.612Z"
+			fill="white" stroke="#CCCCCC" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+	<svg class="instrument__add-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="white" />
+		<path d="M12.0413 7.87521V16.1248" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.9165 12H16.1661" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#CCCCCC" />
+	</svg>
+	<svg class="instrument__choosen-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		xmlns="http://www.w3.org/2000/svg">
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" fill="#EF4545" />
+		<path d="M17.8334 9.08337L11.4167 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<path d="M7.33325 11.4166L11.4166 15.5" stroke="white" stroke-width="2" stroke-linecap="round" />
+		<rect x="0.5" y="0.5" width="23" height="23" rx="7.5" stroke="#EF4545" />
+	</svg>
+
+	<a class="instrument__open popup-link" href="#instrument-@@instrumentNum"></a>
+	<img class="instrument__img" src="img/instrument-2.png" alt="instrument">
+	<div id="instrument-@@instrumentNum" class="popup instrument__popup">
+		<div class="popup__body ">
+			<div class="popup__content ">
+				<a class="popup__close close-popup" href="#">
+					<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.5">
+							<path d="M19 6L5 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+							<path d="M5 6L19 20" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+						</g>
+					</svg>
+				</a>
+
+				<div class="popup__info">
+
+					<div class="popup__img-box">
+						<img class="popup__img" src="img/instrument-2.png" alt="images">
+					</div>
+
+					<div class="popup__card">
+						<span class="popup__card-title">Loom</span>
+
+						<p class="popup__card-descr">
+							Easy to use screen capture app for windows and macOS
+						</p>
+
+						<a class="popup__card-link button" href="/catalog.html">
+							Explore
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
 						</ul>
 
 						<div class="pagination">

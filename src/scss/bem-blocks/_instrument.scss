@@ -69,6 +69,7 @@
 .instrument__add-icon,
 .instrument__choosen-icon {
     position: absolute;
+    z-index: 2;
     top: 1.125rem;
     left: 1.125rem;
 }
